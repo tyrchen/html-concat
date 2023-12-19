@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOSP</title>
+
+  <link rel="stylesheet" href="https://artofproblemsolving.com/assets/fonts/font-awesome/css/all.css">
+
+  <link rel="stylesheet" href="https://artofproblemsolving.com/assets/css/sharedsite.css">
+
+  <link rel="stylesheet" href="https://artofproblemsolving.com/assets/css/navheader.css">
+
+  <link rel="stylesheet" href="https://artofproblemsolving.com/assets/css/footer.css">
+
+  <link rel="stylesheet" href="https://artofproblemsolving.com/assets/css/main-head.css">
+
+  <link rel="stylesheet" href="https://artofproblemsolving.com/assets/css/epic-fail.css">
+
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2003 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>The area of trapezoid <img alt="$ABCD$" height="13" width="57" src="//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png" class="latex"> is <img height="15" class="latex" style="vertical-align: 0px" width="60" alt="$164\text{ cm}^2$" src="//latex.artofproblemsolving.com/e/1/5/e1548b7b9b1d2903b6907b98b709c00ed1ac97f2.png">.  The altitude is 8 cm, <img class="latex" width="27" src="//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png" alt="$AB$" height="13"> is 10 cm, and <img alt="$CD$" width="29" height="12" src="//latex.artofproblemsolving.com/0/9/4/0948661e822f2a953c43a57ac9e40b2734476de4.png" class="latex"> is 17 cm.  What is <img height="12" alt="$BC$" src="//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png" class="latex" width="28">, in centimeters?
+</p><p><img width="482" class="latexcenter" src="//latex.artofproblemsolving.com/c/6/6/c66899b4bcfdeca2247f2e6ca1ab430486b95306.png" alt="[asy]/* AMC8 2003 #21 Problem */ size(4inch,2inch); draw((0,0)--(31,0)--(16,8)--(6,8)--cycle); draw((11,8)--(11,0), linetype(&quot;8 4&quot;)); draw((11,1)--(12,1)--(12,0)); label(&quot;$A$&quot;, (0,0), SW); label(&quot;$D$&quot;, (31,0), SE); label(&quot;$B$&quot;, (6,8), NW); label(&quot;$C$&quot;, (16,8), NE); label(&quot;10&quot;, (3,5), W); label(&quot;8&quot;, (11,4), E); label(&quot;17&quot;, (22.5,5), E);[/asy]" height="155">
+</p><p><img height="17" alt="$\textbf{(A)}\ 9\qquad\textbf{(B)}\ 10\qquad\textbf{(C)}\ 12\qquad\textbf{(D)}\ 15\qquad\textbf{(E)}\ 20$" src="//latex.artofproblemsolving.com/e/d/c/edc4672c2f9407da92133e34f721a8193b914dd2.png" style="vertical-align: -4px" class="latex" width="385">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>The following figures are composed of squares and circles. Which figure has a shaded region with largest area?
+</p><p><img alt="[asy]/* AMC8 2003 #22 Problem */ size(3inch, 2inch); unitsize(1cm); pen outline = black+linewidth(1); filldraw((0,0)--(2,0)--(2,2)--(0,2)--cycle, mediumgrey, outline); filldraw(shift(3,0)*((0,0)--(2,0)--(2,2)--(0,2)--cycle), mediumgrey, outline); filldraw(Circle((7,1), 1), mediumgrey, black+linewidth(1)); filldraw(Circle((1,1), 1), white, outline); filldraw(Circle((3.5,.5), .5), white, outline); filldraw(Circle((4.5,.5), .5), white, outline); filldraw(Circle((3.5,1.5), .5), white, outline); filldraw(Circle((4.5,1.5), .5), white, outline); filldraw((6.3,.3)--(7.7,.3)--(7.7,1.7)--(6.3,1.7)--cycle, white, outline); label(&quot;A&quot;, (1, 2), N); label(&quot;B&quot;, (4, 2), N); label(&quot;C&quot;, (7, 2), N); draw((0,-.5)--(.5,-.5), BeginArrow); draw((1.5, -.5)--(2, -.5), EndArrow); label(&quot;2 cm&quot;, (1, -.5));  draw((3,-.5)--(3.5,-.5), BeginArrow); draw((4.5, -.5)--(5, -.5), EndArrow); label(&quot;2 cm&quot;, (4, -.5));  draw((6,-.5)--(6.5,-.5), BeginArrow); draw((7.5, -.5)--(8, -.5), EndArrow); label(&quot;2 cm&quot;, (7, -.5));  draw((6,1)--(6,-.5), linetype(&quot;4 4&quot;)); draw((8,1)--(8,-.5), linetype(&quot;4 4&quot;));[/asy]" width="382" height="152" src="//latex.artofproblemsolving.com/6/6/6/666ac41befa9511afaf3ff9277993a8e313ccc43.png" class="latexcenter">
+</p><p><img width="640" alt="$\textbf{(A)}\ \text{A only}\qquad\textbf{(B)}\  \text{B only}\qquad\textbf{(C)}\  \text{C only}\qquad\textbf{(D)}\  \text{both A and B}\qquad\textbf{(E)}\  \text{all are equal}$" class="latex" style="vertical-align: -4px" height="17" src="//latex.artofproblemsolving.com/e/9/c/e9c079d2fd88716b233bcb4c7691daef1445186f.png">
+</p><p><br>
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In the pattern below, the cat moves clockwise through the four squares,  and the mouse moves counterclockwise through the eight exterior segments of the four squares.
+</p>
+<center>
+<p><a href="/wiki/index.php/File:2003amc8prob23a.png" class="image"><img width="800" alt="2003amc8prob23a.png" srcset="https://wiki-images.artofproblemsolving.com//thumb/1/1a/2003amc8prob23a.png/1200px-2003amc8prob23a.png 1.5x, https://wiki-images.artofproblemsolving.com//1/1a/2003amc8prob23a.png 2x" height="177" src="https://wiki-images.artofproblemsolving.com//thumb/1/1a/2003amc8prob23a.png/800px-2003amc8prob23a.png"></a>
+</p>
+</center>
+<p>If the pattern is continued, where would the cat and mouse be after the 247th move?
+</p>
+<center>
+<p><a class="image" href="/wiki/index.php/File:2003amc8prob23b.png"><img src="https://wiki-images.artofproblemsolving.com//thumb/e/ed/2003amc8prob23b.png/800px-2003amc8prob23b.png" alt="2003amc8prob23b.png" height="175" srcset="https://wiki-images.artofproblemsolving.com//thumb/e/ed/2003amc8prob23b.png/1200px-2003amc8prob23b.png 1.5x, https://wiki-images.artofproblemsolving.com//e/ed/2003amc8prob23b.png 2x" width="800"></a>
+</p>
+</center>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A ship travels from point <img alt="$A$" width="13" class="latex" height="13" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png"> to point <img alt="$B$" class="latex" height="12" width="14" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png"> along a semicircular path, centered at Island <img height="12" src="//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" class="latex" alt="$X$" width="15">. Then it travels along a straight path from <img alt="$B$" class="latex" width="14" height="12" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png"> to <img src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" class="latex" alt="$C$" width="14" height="12">. Which of these graphs best shows the ship's distance from Island <img alt="$X$" height="12" src="//latex.artofproblemsolving.com/6/a/4/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" class="latex" width="15"> as it moves along its course?
+</p><p><img alt="[asy]size(150); pair X=origin, A=(-5,0), B=(5,0), C=(0,5); draw(Arc(X, 5, 180, 360)^^B--C); dot(X); label(&quot;$X$&quot;, X, NE); label(&quot;$C$&quot;, C, N); label(&quot;$B$&quot;, B, E); label(&quot;$A$&quot;, A, W); [/asy]" height="228" width="252" src="//latex.artofproblemsolving.com/9/1/9/91933f8be27c24174af480d964c31782da9f3bb4.png" class="latexcenter">
+</p>
+<center>
+<p><a class="image" href="/wiki/index.php/File:2003amc8prob24ans.png"><img height="205" width="800" alt="2003amc8prob24ans.png" src="https://wiki-images.artofproblemsolving.com//d/d9/2003amc8prob24ans.png"></a>
+</p>
+</center>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In the figure, the area of square <img height="12" alt="$WXYZ$" src="//latex.artofproblemsolving.com/2/b/0/2b076f2e7f124fc5d8b5ef7b30b95bfcfe85449f.png" class="latex" width="64"> is <img height="15" src="//latex.artofproblemsolving.com/8/c/4/8c401da100e4ee9c4132a90cf9f6a74e90efbab2.png" class="latex" alt="$25 \text{ cm}^2$" width="51">. The four smaller squares have sides 1 cm long, either parallel to or coinciding with the sides of the large square. In <img src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" alt="$\triangle ABC$" height="13" class="latex" width="58">, <img alt="$AB = AC$" width="80" src="//latex.artofproblemsolving.com/f/3/a/f3ac37c9fa391eebb9601bfaca8bfbfaabdf5ca1.png" height="13" class="latex">, and when <img src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" class="latex" width="58" alt="$\triangle ABC$" height="13"> is folded over side <img src="//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png" alt="$\overline{BC}$" height="15" class="latex" width="29">, point <img class="latex" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" width="13" height="13" alt="$A$"> coincides with <img alt="$O$" class="latex" height="12" width="13" src="//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png">, the center of square <img height="12" width="64" class="latex" alt="$WXYZ$" src="//latex.artofproblemsolving.com/2/b/0/2b076f2e7f124fc5d8b5ef7b30b95bfcfe85449f.png">. What is the area of <img src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" width="58" alt="$\triangle ABC$" class="latex" height="13">, in square centimeters?
+</p><p><img width="377" class="latexcenter" height="215" src="//latex.artofproblemsolving.com/f/b/5/fb5de36e57bfb81488edf36e2717cf7b93f0444b.png" alt="[asy] defaultpen(fontsize(8)); size(225); pair Z=origin, W=(0,10), X=(10,10), Y=(10,0), O=(5,5), B=(-4,8), C=(-4,2), A=(-13,5); draw((-4,0)--Y--X--(-4,10)--cycle); draw((0,-2)--(0,12)--(-2,12)--(-2,8)--B--A--C--(-2,2)--(-2,-2)--cycle); dot(O); label(&quot;$A$&quot;, A, NW); label(&quot;$O$&quot;, O, NE); label(&quot;$B$&quot;, B, SW); label(&quot;$C$&quot;, C, NW); label(&quot;$W$&quot;,W , NE); label(&quot;$X$&quot;, X, N); label(&quot;$Y$&quot;, Y, S); label(&quot;$Z$&quot;, Z, SE); [/asy]">
+</p><p><img width="413" class="latex" src="//latex.artofproblemsolving.com/f/4/0/f4060296f6cfc830dd8eff64c7db0c55e89d49ca.png" style="vertical-align: -13px" alt="$\textbf{(A)}\ \frac{15}4\qquad\textbf{(B)}\ \frac{21}4\qquad\textbf{(C)}\ \frac{27}4\qquad\textbf{(D)}\ \frac{21}2\qquad\textbf{(E)}\ \frac{27}2$" height="38">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2004 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Spinners <img alt="$A$" class="latex" width="13" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" height="13"> and <img height="12" width="14" alt="$B$" class="latex" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png"> are spun. On each spinner, the arrow is equally likely to land on each number. What is the probability that the product of the two spinners' numbers is even?
+</p><p><img width="252" alt="[asy] pair A=(0,0); pair B=(3,0); draw(Circle(A,1)); draw(Circle(B,1));  draw((-1,0)--(1,0)); draw((0,1)--(0,-1)); draw((3,0)--(3,1)); draw((3+sqrt(3)/2,-.5)--(3,0)); draw((3,0)--(3-sqrt(3)/2,-.5));   label(&quot;$A$&quot;,(-1,1)); label(&quot;$B$&quot;,(2,1));  label(&quot;$1$&quot;,(-.4,.4)); label(&quot;$2$&quot;,(.4,.4)); label(&quot;$3$&quot;,(.4,-.4)); label(&quot;$4$&quot;,(-.4,-.4)); label(&quot;$1$&quot;,(2.6,.4)); label(&quot;$2$&quot;,(3.4,.4)); label(&quot;$3$&quot;,(3,-.5));  [/asy]" height="108" class="latexcenter" src="//latex.artofproblemsolving.com/2/b/8/2b8c0e9de9eb3c68e3938fd3467803e6bbb24ef3.png">
+</p><p><img style="vertical-align: -13px" class="latex" height="38" src="//latex.artofproblemsolving.com/c/0/2/c0254b9c2a0eb922cc16bc7901aad6a1ee1a6a3b.png" alt="$\textbf{(A)}\ \frac14\qquad \textbf{(B)}\ \frac13\qquad \textbf{(C)}\ \frac12\qquad \textbf{(D)}\ \frac23\qquad \textbf{(E)}\ \frac34$" width="367">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+<p>At a party there are only single women and married men with their wives. The probability that a randomly selected woman is single is <img class="latex" alt="$\frac25$" src="//latex.artofproblemsolving.com/c/a/0/ca0718a644a517afe86b575e263feba13d34be03.png" style="vertical-align: -12px" height="37" width="11">. What fraction of the people in the room are married men?
+</p><p><img height="38" class="latex" alt="$\textbf{(A)}\ \frac13\qquad \textbf{(B)}\ \frac38\qquad \textbf{(C)}\ \frac25\qquad \textbf{(D)}\ \frac{5}{12}\qquad \textbf{(E)}\ \frac35$" style="vertical-align: -13px" src="//latex.artofproblemsolving.com/5/4/c/54c216bb4badf692aa1aeaeded8454956a1cb837.png" width="376">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+<p>Tess runs counterclockwise around rectangular block <img width="60" src="//latex.artofproblemsolving.com/0/0/7/0073ed91e1a9a1cda445af237b7b67815147c979.png" class="latex" height="12" alt="$JKLM$">. She lives at corner <img height="12" alt="$J$" src="//latex.artofproblemsolving.com/a/b/b/abb5588023cfa1ac14643e9778699f03eecc57a3.png" width="12" class="latex">. Which graph could represent her straight-line distance from home?
+</p><p><img class="latexcenter" src="//latex.artofproblemsolving.com/c/f/a/cfa3151064b41051d0fd988b63693968a5f5531e.png" alt="[asy] unitsize(5mm); pair J=(-3,2); pair K=(-3,-2); pair L=(3,-2); pair M=(3,2);  draw(J--K--L--M--cycle); label(&quot;$J$&quot;,J,NW); label(&quot;$K$&quot;,K,SW); label(&quot;$L$&quot;,L,SE); label(&quot;$M$&quot;,M,NE); [/asy]" width="195" height="138">
+</p><p><img style="vertical-align: -4px" src="//latex.artofproblemsolving.com/a/4/6/a46f6af01fcf3bb5f6cac2316bc4de9bb3906bec.png" height="17" width="28" class="latex" alt="$\textbf{(A)}$">
+<img height="135" src="//latex.artofproblemsolving.com/e/1/c/e1ce58d3d8b5534cf365cdcf8118b8edc2afaa55.png" class="latexcenter" alt="[asy] size(80);defaultpen(linewidth(0.8)); //A draw((16,0)--origin--(0,16)); draw(origin--(15,15)); label(&quot;time&quot;, (8,0), S); label(rotate(90)*&quot;distance&quot;, (0,8), W); [/asy]" width="135">
+</p><p><img src="//latex.artofproblemsolving.com/b/7/1/b7193f66028e13f331d53ff5e6942c4b05587465.png" height="17" class="latex" style="vertical-align: -4px" width="27" alt="$\textbf{(B)}$">
+<img width="135" class="latexcenter" src="//latex.artofproblemsolving.com/6/5/7/657b9a7866d66252b5a03bb0b4c6b257cbf6504a.png" height="135" alt="[asy] size(80);defaultpen(linewidth(0.8)); //B draw((16,0)--origin--(0,16)); draw((0,6)--(1,6)--(1,12)--(2,12)--(2,11)--(3,11)--(3,1)--(12,1)--(12,0)); label(&quot;time&quot;, (8,0), S); label(rotate(90)*&quot;distance&quot;, (0,8), W); [/asy]">
+</p><p><img height="17" style="vertical-align: -4px" class="latex" src="//latex.artofproblemsolving.com/1/6/9/169b8d69bd74a91e72ec43123070d770633a340a.png" alt="$\textbf{(C)}$" width="27">
+<img class="latexcenter" height="135" src="//latex.artofproblemsolving.com/b/f/f/bff98a36d2d506b16dadd585fc7d43750b30b43b.png" alt="[asy] size(80);defaultpen(linewidth(0.8)); //C draw((16,0)--origin--(0,16)); draw(origin--(2.7,8)--(3,9)^^(11,9)--(14,0)); draw(Arc((4,9), 1, 0, 180)); draw(Arc((10,9), 1, 0, 180)); draw(Arc((7,9), 2, 180,360)); label(&quot;time&quot;, (8,0), S); label(rotate(90)*&quot;distance&quot;, (0,8), W); [/asy]" width="135">
+</p><p><img class="latex" alt="$\textbf{(D)}$" width="28" height="17" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/b/3/0/b305929a95b53f14a0ad53eba1d8560626e1f28b.png">
+<img height="135" src="//latex.artofproblemsolving.com/c/4/f/c4f99af82414203b386ec3abd62914e6b1f85cff.png" width="135" class="latexcenter" alt="[asy] size(80);defaultpen(linewidth(0.8)); //D draw((16,0)--origin--(0,16)); draw(origin--(2,6)--(7,14)--(10,12)--(14,0)); label(&quot;time&quot;, (8,0), S); label(rotate(90)*&quot;distance&quot;, (0,8), W); [/asy]">
+</p><p><img height="17" class="latex" style="vertical-align: -4px" alt="$\textbf{(E)}$" width="26" src="//latex.artofproblemsolving.com/7/5/e/75e41e3cd48cee2c6866cfbb4386a8e99d3482f5.png">
+<img height="135" src="//latex.artofproblemsolving.com/1/8/d/18dee85d26f1e02bceb105cd20a1bd2880aaee49.png" class="latexcenter" alt="[asy] size(80);defaultpen(linewidth(0.8)); //E draw((16,0)--origin--(0,16)); draw(origin--(3,6)--(7,6)--(10,12)--(14,12)); label(&quot;time&quot;, (8,0), S); label(rotate(90)*&quot;distance&quot;, (0,8), W); [/asy]" width="135">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In the figure, <img class="latex" width="57" alt="$ABCD$" height="13" src="//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png"> is a rectangle and <img height="12" src="//latex.artofproblemsolving.com/9/7/3/9735b37ac43861ef9e105bff1711f117917b09ec.png" class="latex" width="59" alt="$EFGH$"> is a parallelogram. Using the measurements given in the figure, what is the length <img class="latex" height="12" src="//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png" width="9" alt="$d$"> of the segment that is perpendicular to <img width="31" src="//latex.artofproblemsolving.com/d/1/9/d19b2b402fd919915fe203abbf4e07664251c82d.png" alt="$\overline{HE}$" height="15" class="latex"> and <img class="latex" alt="$\overline{FG}$" src="//latex.artofproblemsolving.com/8/f/4/8f450f6af9c000449bff7dc1801fdd77978f6e24.png" height="15" width="29">?
+</p><p><img src="//latex.artofproblemsolving.com/d/2/3/d23e9bb30960feaeb516f8d23d48c117676bfbd0.png" class="latexcenter" width="185" height="152" alt="[asy] unitsize(3mm); defaultpen(linewidth(.8pt)+fontsize(10pt));  pair D=(0,0), C=(10,0), B=(10,8), A=(0,8); pair E=(4,8), F=(10,3), G=(6,0), H=(0,5);  draw(A--B--C--D--cycle); draw(E--F--G--H--cycle);  label(&quot;$A$&quot;,A,NW); label(&quot;$B$&quot;,B,NE); label(&quot;$C$&quot;,C,SE); label(&quot;$D$&quot;,D,SW);  label(&quot;$E$&quot;,E,N); label(&quot;$F$&quot;,(10.8,3)); label(&quot;$G$&quot;,G,S); label(&quot;$H$&quot;,H,W);  label(&quot;$4$&quot;,A--E,N); label(&quot;$6$&quot;,B--E,N); label(&quot;$5$&quot;,(10.8,5.5)); label(&quot;$3$&quot;,(10.8,1.5)); label(&quot;$4$&quot;,G--C,S); label(&quot;$6$&quot;,G--D,S); label(&quot;$5$&quot;,D--H,W); label(&quot;$3$&quot;,A--H,W);  draw((3,7.25)--(7.56,1.17)); label(&quot;$d$&quot;,(3,7.25)--(7.56,1.17), NE);  [/asy]">
+</p><p><img style="vertical-align: -4px" width="418" src="//latex.artofproblemsolving.com/1/9/0/190df14410cc974f1f400afeb39ca91e0da90d18.png" class="latex" alt="$\textbf{(A)}\ 6.8\qquad \textbf{(B)}\ 7.1\qquad \textbf{(C)}\ 7.6\qquad \textbf{(D)}\ 7.8\qquad \textbf{(E)}\ 8.1$" height="17">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Two <img alt="$4 \times 4$" class="latex" width="40" height="12" src="//latex.artofproblemsolving.com/6/2/d/62d4eeb6a966219df4ac79cfc9981ec095e6be0b.png" style="vertical-align: 0px"> squares intersect at right angles, bisecting their intersecting sides, as shown. The circle's diameter is the segment between the two points of intersection. What is the area of the shaded region created by removing the circle from the squares?
+</p><p><img width="172" alt="[asy] unitsize(6mm); draw(unitcircle); filldraw((0,1)--(1,2)--(3,0)--(1,-2)--(0,-1)--(-1,-2)--(-3,0)--(-1,2)--cycle,lightgray,black); filldraw(unitcircle,white,black); [/asy]" height="115" src="//latex.artofproblemsolving.com/f/f/3/ff3f7c00e1a1162a19e43dda58d4387172fd8380.png" class="latexcenter">
+</p><p><img class="latex" width="587" alt="$\text{(A)}\ 16-4\pi\qquad \text{(B)}\ 16-2\pi \qquad \text{(C)}\ 28-4\pi \qquad \text{(D)}\ 28-2\pi \qquad \text{(E)}\ 32-2\pi$" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/f/a/7/fa7a04c5f4e928ff2207aa20271227810f4b49fb.png" height="17">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2005 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>How many distinct triangles can be drawn using three of the dots below as vertices?
+</p><p><img src="//latex.artofproblemsolving.com/5/a/2/5a2b71fd41fb8101c84f6e83e00a34af1e6c98ef.png" alt="[asy]dot(origin^^(1,0)^^(2,0)^^(0,1)^^(1,1)^^(2,1));[/asy]" width="252" class="latexcenter" height="132">
+</p><p><img width="385" height="17" src="//latex.artofproblemsolving.com/5/1/3/513cade1ceb95674fe95707b26e9ae16e0609b0a.png" alt="$\textbf{(A)}\ 9\qquad\textbf{(B)}\ 12\qquad\textbf{(C)}\ 18\qquad\textbf{(D)}\ 20\qquad\textbf{(E)}\ 24$" style="vertical-align: -4px" class="latex">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A company sells detergent in three different sized boxes: small (S), medium (M) and large (L). The medium size costs 50% more than the small size and contains 20% less detergent than the large size. The large size contains twice as much detergent as the small size and costs 30% more than the medium size. Rank the three sizes from best to worst buy.
+</p><p><img class="latex" style="vertical-align: -4px" width="493" height="17" src="//latex.artofproblemsolving.com/f/7/1/f710c5202b937c12f79b5c1106ed1e9df999cb8b.png" alt="$\text{(A)}\, SML \qquad \text{(B)}\, LMS \qquad \text{(C)}\, MSL \qquad \text{(D)}\, LSM \qquad \text{(E)}\, MLS$">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Isosceles right triangle <img height="13" src="//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png" width="42" class="latex" alt="$ABC$"> encloses a semicircle of area <img width="19" height="12" alt="$2\pi$" src="//latex.artofproblemsolving.com/7/0/9/709acef3551b886e6754de72d59a88f00660f0d3.png" class="latex">. The circle has its center <img src="//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png" width="13" alt="$O$" height="12" class="latex"> on hypotenuse <img height="18" class="latex" style="vertical-align: -1px" src="//latex.artofproblemsolving.com/8/4/0/840e2b592390eb6ec918fa6f3292716ce170de66.png" alt="$\overline{AB}$" width="30"> and is tangent to sides <img src="//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png" alt="$\overline{AC}$" class="latex" width="28" height="15"> and <img alt="$\overline{BC}$" class="latex" height="15" width="29" src="//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png">. What is the area of triangle <img height="13" class="latex" width="42" alt="$ABC$" src="//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png">?
+</p><p><img src="//latex.artofproblemsolving.com/8/a/7/8a7fba91b0cdfee41e69cbd89d6b1389d4169877.png" width="252" height="248" alt="[asy]pair a=(4,4), b=(0,0), c=(0,4), d=(4,0), o=(2,2); draw(circle(o, 2)); clip(a--b--c--cycle); draw(a--b--c--cycle); dot(o); label(&quot;$C$&quot;, c, NW); label(&quot;$A$&quot;, a, NE); label(&quot;$B$&quot;, b, SW);[/asy]" class="latexcenter">
+</p><p><img class="latex" alt="$\textbf{(A)}\ 6\qquad\textbf{(B)}\ 8\qquad\textbf{(C)}\ 3\pi\qquad\textbf{(D)}\ 10\qquad\textbf{(E)}\ 4\pi$" width="379" src="//latex.artofproblemsolving.com/1/3/2/13252d83037ab3709be3955ac1cd0059c99afeab.png" height="17" style="vertical-align: -4px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+<p>A certain calculator has only two keys [+1] and [x2]. When you press one of the keys, the calculator automatically  displays the result. For instance, if the calculator originally displayed "9" and you pressed [+1], it would display "10." If you then pressed [x2], it would display "20." Starting with the display "1," what is the fewest number of keystrokes you would need to reach "200"?
+</p><p><img width="376" style="vertical-align: -4px" alt="$\textbf{(A)}\ 8\qquad\textbf{(B)}\ 9\qquad\textbf{(C)}\ 10\qquad\textbf{(D)}\ 11\qquad\textbf{(E)}\ 12$" class="latex" src="//latex.artofproblemsolving.com/5/6/7/567797ed33be3423790ac3b609dc91fe47ec8da2.png" height="17">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A square with side length 2 and a circle share the same center. The total area of the regions that are inside the circle and outside the square is equal to the total area of the regions that are outside the circle and inside the square. What is the radius of the circle?
+</p><p><img width="252" alt="[asy] pair a=(4,4), b=(0,0), c=(0,4), d=(4,0), o=(2,2); draw(a--d--b--c--cycle); draw(circle(o, 2.5)); [/asy]" height="252" src="//latex.artofproblemsolving.com/c/8/c/c8c667941886cc09d8e6a51330698d67e111d5d3.png" class="latexcenter">
+</p><p><img style="vertical-align: -17px" src="//latex.artofproblemsolving.com/b/5/5/b556a22bc859e3703d729621b735c0cf5b33e779.png" alt="$\textbf{(A)}\ \frac{2}{\sqrt{\pi}} \qquad \textbf{(B)}\ \frac{1+\sqrt{2}}{2} \qquad \textbf{(C)}\ \frac{3}{2} \qquad \textbf{(D)}\ \sqrt{3} \qquad \textbf{(E)}\ \sqrt{\pi}$" width="457" class="latex" height="45">
+</p>
+<h2><span class="mw-headline" id="Solutions">Solutions</span></h2>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2006 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>An aquarium has a rectangular base that measures <img width="26" height="13" style="vertical-align: 0px" class="latex" src="//latex.artofproblemsolving.com/e/5/9/e59e2c6e83eb78cca610a5fd4070ae01c8d4ae60.png" alt="$100$"> cm by <img alt="$40$" src="//latex.artofproblemsolving.com/7/8/7/78792fe4680a164f537ea72a4f900e4471433c3b.png" width="17" class="latex" style="vertical-align: 0px" height="13"> cm and has a height of <img height="12" width="17" src="//latex.artofproblemsolving.com/9/0/6/906734e2f1010e9a171ffee8050cbc0649cea37c.png" class="latex" alt="$50$"> cm. The aquarium is filled with water to a  depth of <img width="18" height="12" src="//latex.artofproblemsolving.com/7/8/9/78916550838bd31d66e4cdefbc366edb11fd00bd.png" alt="$37$" class="latex"> cm. A rock with volume <img style="vertical-align: 0px" height="15" alt="$1000\text{cm}^3$" src="//latex.artofproblemsolving.com/1/a/0/1a0bcf5ce6f03b10fb560fd96a49a465a469f210.png" width="63" class="latex"> is then placed in the aquarium and completely submerged. By how many centimeters does the water level rise?
+</p><p><img src="//latex.artofproblemsolving.com/7/0/8/7085a05cf57807d64d769fc6b370d510d5d68e9d.png" style="vertical-align: -4px" alt="$\textbf{(A)}\ 0.25\qquad\textbf{(B)}\ 0.5\qquad\textbf{(C)}\ 1\qquad\textbf{(D)}\ 1.25\qquad\textbf{(E)}\ 2.5$" width="423" class="latex" height="17">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Three different one-digit positive integers are placed in the bottom row of cells. Numbers in adjacent cells are added and the sum is placed in the cell above them. In the second row, continue the same process to obtain a number in the top cell. What is the difference between the largest and smallest numbers possible in the top cell?
+</p><p><img height="252" src="//latex.artofproblemsolving.com/5/7/0/570b0c91c3fb3ed033703f1831719e94604f7ae9.png" class="latexcenter" width="182" alt="[asy] path cell=((0,0)--(1,0)--(1,1)--(0,1)--cycle); path sw=((0,0)--(1,sqrt(3))); path se=((5,0)--(4,sqrt(3))); draw(cell, linewidth(1)); draw(shift(2,0)*cell, linewidth(1)); draw(shift(4,0)*cell, linewidth(1)); draw(shift(1,3)*cell, linewidth(1)); draw(shift(3,3)*cell, linewidth(1)); draw(shift(2,6)*cell, linewidth(1)); draw(shift(0.45,1.125)*sw, EndArrow); draw(shift(2.45,1.125)*sw, EndArrow); draw(shift(1.45,4.125)*sw, EndArrow); draw(shift(-0.45,1.125)*se, EndArrow); draw(shift(-2.45,1.125)*se, EndArrow); draw(shift(-1.45,4.125)*se, EndArrow); label(&quot;$+$&quot;, (1.5,1.5)); label(&quot;$+$&quot;, (3.5,1.5)); label(&quot;$+$&quot;, (2.5,4.5));[/asy]">
+</p><p><img alt="$\textbf{(A)}\ 16\qquad\textbf{(B)}\ 24\qquad\textbf{(C)}\ 25\qquad\textbf{(D)}\ 26\qquad\textbf{(E)}\ 35$" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/f/a/7/fa7df16c8fbabdb3662776dc3d860fd9ec5c2492.png" height="17" class="latex" width="394">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A box contains gold coins. If the coins are equally divided among six people, four coins are left over. If the coins are equally divided among five people, three coins are left over. If the box holds the smallest number of coins that meets these two conditions, how many coins are left when equally divided among seven people?
+</p><p><img src="//latex.artofproblemsolving.com/3/7/f/37ff611a879363cbf22f507a4f7f780ba184866e.png" alt="$\textbf{(A)}\ 0\qquad\textbf{(B)}\ 1\qquad\textbf{(C)}\ 2\qquad\textbf{(D)}\ 3\qquad\textbf{(E)}\ 5$" class="latex" height="17" width="348" style="vertical-align: -4px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In the multiplication problem below <img height="13" width="13" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" class="latex" alt="$A$">, <img height="12" class="latex" alt="$B$" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" width="14">, <img height="12" width="14" alt="$C$" src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" class="latex">, <img class="latex" width="15" src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" height="12" alt="$D$"> are different digits. What is <img style="vertical-align: -1px" alt="$A+B$" src="//latex.artofproblemsolving.com/b/8/3/b831312585cb4ab6697896f86b72accbddbc4b45.png" height="14" width="50" class="latex">?
+</p><p><img class="latexcenter" src="//latex.artofproblemsolving.com/c/9/8/c98496cee54a981529919a464508835b9321f88e.png" width="127" height="53" alt="\[\begin{array}{cccc}&amp; A &amp; B &amp; A\\ \times &amp; &amp; C &amp; D\\ \hline C &amp; D &amp; C &amp; D\\ \end{array}\]">
+</p><p><img width="348" src="//latex.artofproblemsolving.com/1/0/2/102989cd7c2a81c5bbef0ac5bbe5d6377cce6aa6.png" class="latex" style="vertical-align: -4px" height="17" alt="$\textbf{(A)}\ 1\qquad\textbf{(B)}\ 2\qquad\textbf{(C)}\ 3\qquad\textbf{(D)}\ 4\qquad\textbf{(E)}\ 9$">
+</p>
+<h2><span class="mw-headline" id="Video_Solution_by_OmegaLearn">Video Solution by OmegaLearn</span></h2>
+<p><a href="https://youtu.be/7an5wU9Q5hk?t=3080" rel="nofollow" class="external free">https://youtu.be/7an5wU9Q5hk?t=3080</a>
+</p>
+<h2><span id="Video_Solution" class="mw-headline">Video Solution</span></h2>
+<p><a href="https://youtu.be/sd4XopW76ps" class="external free" rel="nofollow">https://youtu.be/sd4XopW76ps</a> -Happytwin
+</p><p><a rel="nofollow" href="https://www.youtube.com/channel/UCUf37EvvIHugF9gPiJ1yRzQ" class="external free">https://www.youtube.com/channel/UCUf37EvvIHugF9gPiJ1yRzQ</a>
+</p><p><a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=Y4DXkhYthhs">https://www.youtube.com/watch?v=Y4DXkhYthhs</a>   ~David
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Barry wrote 6 different numbers, one on each side of 3 cards, and laid the cards on a table, as shown. The sums of the two numbers on each of the three cards are equal. The three numbers on the hidden sides are prime numbers. What is the average of the hidden prime numbers?
+</p><p><img alt="[asy] path card=((0,0)--(0,3)--(2,3)--(2,0)--cycle); draw(card, linewidth(1)); draw(shift(2.5,0)*card, linewidth(1)); draw(shift(5,0)*card, linewidth(1)); label(&quot;$44$&quot;, (1,1.5)); label(&quot;$59$&quot;, shift(2.5,0)*(1,1.5)); label(&quot;$38$&quot;, shift(5,0)*(1,1.5));[/asy]" height="108" width="252" src="//latex.artofproblemsolving.com/9/9/d/99d5a887c5efe5e48596399d86a16a3f95fe9b35.png" class="latexcenter">
+</p><p><img style="vertical-align: -4px" width="394" src="//latex.artofproblemsolving.com/c/9/3/c93357694305df9314ccb524a7952795d59901ca.png" alt="$\textbf{(A)}\ 13\qquad\textbf{(B)}\ 14\qquad\textbf{(C)}\ 15\qquad\textbf{(D)}\ 16\qquad\textbf{(E)}\ 17$" height="17" class="latex">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2007 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Two cards are dealt from a deck of four red cards labeled <img alt="$A$" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" class="latex" height="13" width="13">, <img width="14" class="latex" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" alt="$B$" height="12">, <img src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" width="14" height="12" class="latex" alt="$C$">, <img width="15" src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="$D$" height="12" class="latex"> and four green cards labeled <img alt="$A$" width="13" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" height="13" class="latex">, <img height="12" alt="$B$" width="14" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" class="latex">, <img class="latex" width="14" src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" height="12" alt="$C$">, <img alt="$D$" width="15" height="12" src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" class="latex">. A winning pair is two of the same color or two of the same letter. What is the probability of drawing a winning pair?
+</p><p><img alt="$\textbf{(A)}\ \frac{2}{7}\qquad\textbf{(B)}\ \frac{3}{8}\qquad\textbf{(C)}\ \frac{1}{2}\qquad\textbf{(D)}\ \frac{4}{7}\qquad\textbf{(E)}\ \frac{5}{8}$" style="vertical-align: -12px" height="37" width="367" src="//latex.artofproblemsolving.com/6/9/d/69d1ddebcb7e83c3010e4d0d4238f3434b6ea834.png" class="latex">
+</p>
+<h2><span class="mw-headline" id="Video_Solution_by_OmegaLearn">Video Solution by OmegaLearn</span></h2>
+<p><a class="external free" rel="nofollow" href="https://youtu.be/OOdK-nOzaII?t=1712">https://youtu.be/OOdK-nOzaII?t=1712</a>
+</p><p>~ pi_is_3.14
+</p>
+<h2><span id="Video_Solution" class="mw-headline">Video Solution</span></h2>
+<p><a class="external free" rel="nofollow" href="https://youtu.be/OOdK-nOzaII?t=1698">https://youtu.be/OOdK-nOzaII?t=1698</a>
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A lemming sits at a corner of a square with side length <img width="17" style="vertical-align: 0px" src="//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png" class="latex" height="13" alt="$10$"> meters. The lemming runs <img width="22" height="12" alt="$6.2$" class="latex" src="//latex.artofproblemsolving.com/2/8/9/289c63acd7cba8f71fb16a51b9f703285b62de15.png"> meters along a diagonal toward the opposite corner. It stops, makes a <img alt="$90^{\circ}$" width="24" height="13" src="//latex.artofproblemsolving.com/6/a/7/6a7dfa8a2a90d521b2b03f5b82a1fb9f85dce88c.png" class="latex"> right turn and runs <img alt="$2$" width="8" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" height="12" class="latex"> more meters. A scientist measures the shortest distance between the lemming and each side of the square. What is the average of these four distances in meters?
+</p><p><img class="latex" style="vertical-align: -4px" width="377" height="17" src="//latex.artofproblemsolving.com/1/d/d/1dde680d4fbde5fb993cfa9454ce78c8c6b9f69c.png" alt="$\textbf{(A)}\ 2 \qquad \textbf{(B)}\ 4.5 \qquad \textbf{(C)}\ 5 \qquad \textbf{(D)}\ 6.2 \qquad \textbf{(E)}\ 7$">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>What is the area of the shaded pinwheel shown in the <img class="latex" alt="$5 \times 5$" src="//latex.artofproblemsolving.com/1/9/7/197151a067f49bd4daa1952d1a4fac322409f0a6.png" height="12" width="40"> grid?
+</p><p><img src="//latex.artofproblemsolving.com/b/b/1/bb1fcead3fb785c17349c43a31ed1e90bfc319e0.png" height="252" class="latexcenter" alt="[asy] filldraw((2.5,2.5)--(0,1)--(1,1)--(1,0)--(2.5,2.5)--(4,0)--(4,1)--(5,1)--(2.5,2.5)--(5,4)--(4,4)--(4,5)--(2.5,2.5)--(1,5)--(1,4)--(0,4)--cycle, gray, black); int i; for(i=0; i<6; i=i+1) { draw((i,0)--(i,5)); draw((0,i)--(5,i)); } [/asy]" width="252">
+</p><p><img height="17" alt="$\textbf{(A)}\: 4\qquad\textbf{(B)}\: 6\qquad\textbf{(C)}\: 8\qquad\textbf{(D)}\: 10\qquad\textbf{(E)}\: 12$" src="//latex.artofproblemsolving.com/5/d/f/5dfadde162f16ea5e6add37321218c4aba28ccc5.png" class="latex" width="359" style="vertical-align: -4px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A bag contains four pieces of paper, each labeled with one of the digits <img style="vertical-align: 0px" height="12" width="8" alt="$1$" src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" class="latex">, <img alt="$2$" width="8" height="12" class="latex" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png">, <img height="12" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" width="8" alt="$3$" class="latex"> or <img class="latex" alt="$4$" width="9" height="12" src="//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png" style="vertical-align: 0px">, with no repeats. Three of these pieces are drawn, one at a time without replacement, to construct a three-digit number. What is the probability that the three-digit number is a multiple of <img alt="$3$" class="latex" height="12" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" width="8">?
+<img src="//latex.artofproblemsolving.com/b/b/b/bbb02fa636752c578cd93932b5fb9e3443bbdc53.png" style="vertical-align: -13px" class="latex" height="38" alt="$\textbf{(A)}\ \frac{1}{4}\qquad\textbf{(B)}\ \frac{1}{3}\qquad\textbf{(C)}\ \frac{1}{2}\qquad\textbf{(D)}\ \frac{2}{3}\qquad\textbf{(E)}\ \frac{3}{4}$" width="367">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>On the dart board shown in the figure below, the outer circle has radius <img class="latex" src="//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png" width="8" alt="$6$" height="12"> and the inner circle has radius <img width="8" height="12" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="$3$" class="latex">. Three radii divide each circle into three congruent regions, with point values shown. The probability that a dart will hit a given region is proportional to the area of the region. When two darts hit this board, the score is the sum of the point values of the regions hit. What is the probability that the score is odd?
+</p>
+<center><img height="252" src="//latex.artofproblemsolving.com/5/f/f/5ff4beba8341f63918a7aa0b853b8350175a54fc.png" width="252" class="latexcenter" alt="[asy] draw(circle((0,0),6)); draw(circle((0,0),3)); draw((0,0)--(0,6)); draw((0,0)--(rotate(120)*(0,6))); draw((0,0)--(rotate(-120)*(0,6))); label('1',(rotate(60)*(0,3/2))); label('2',(rotate(-60)*(0,3/2))); label('2',(0,-3/2)); label('2',(rotate(60)*(0,9/2))); label('1',(rotate(-60)*(0,9/2))); label('1',(0,-9/2)); [/asy]"></center>
+<p><img style="vertical-align: -12px" width="369" class="latex" height="37" alt="$\mathrm{(A)} \frac{17}{36} \qquad \mathrm{(B)} \frac{35}{72} \qquad \mathrm{(C)} \frac{1}{2} \qquad \mathrm{(D)} \frac{37}{72} \qquad \mathrm{(E)} \frac{19}{36}$" src="//latex.artofproblemsolving.com/4/a/2/4a211afe340c97b72a5a380273bf4535b71ea1ba.png">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2008 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Jerry cuts a wedge from a <img alt="$6$" class="latex" src="//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png" width="8" height="12">-cm cylinder of bologna as shown by the dashed curve. Which answer choice is closest to the volume of his wedge in cubic centimeters?
+</p><p><img height="218" src="//latex.artofproblemsolving.com/0/d/b/0db552e969b4c23a74bc8bb14087a79249bd36a1.png" width="252" alt="[asy] defaultpen(linewidth(0.65)); real d=90-63.43494882; draw(ellipse((origin), 2, 4)); fill((0,4)--(0,-4)--(-8,-4)--(-8,4)--cycle, white); draw(ellipse((-4,0), 2, 4)); draw((0,4)--(-4,4)); draw((0,-4)--(-4,-4)); draw(shift(-2,0)*rotate(-d-5)*ellipse(origin, 1.82, 4.56), linetype(&quot;10 10&quot;)); draw((-4,4)--(-8,4), dashed); draw((-4,-4)--(-8,-4), dashed); draw((-4,4.3)--(-4,5)); draw((0,4.3)--(0,5)); draw((-7,4)--(-7,-4), Arrows(5)); draw((-4,4.7)--(0,4.7), Arrows(5)); label(&quot;$8$ cm&quot;, (-7,0), W); label(&quot;$6$ cm&quot;, (-2,4.7), N);[/asy]" class="latexcenter">
+</p><p><img width="421" src="//latex.artofproblemsolving.com/e/a/4/ea47f06f15f579defbe1060951bf2179b4c290ae.png" style="vertical-align: -4px" alt="$\textbf{(A)} \ 48 \qquad \textbf{(B)} \ 75 \qquad \textbf{(C)} \ 151\qquad \textbf{(D)} \ 192 \qquad \textbf{(E)} \ 603$" height="17" class="latex">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>For how many positive integer values of <img height="8" alt="$n$" src="//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" width="10" class="latex"> are both <img width="13" alt="$\frac{n}{3}$" height="33" src="//latex.artofproblemsolving.com/8/1/4/814732f8ea7dd6b49a51727bc3a8ba11b461819d.png" class="latex" style="vertical-align: -12px"> and <img class="latex" src="//latex.artofproblemsolving.com/a/4/5/a45e3d817886b4d9dbd6bb74ad23463ed139ed68.png" alt="$3n$" width="19" height="12"> three-digit whole numbers?
+</p><p><img class="latex" height="17" alt="$\textbf{(A)}\ 12\qquad \textbf{(B)}\ 21\qquad \textbf{(C)}\ 27\qquad \textbf{(D)}\ 33\qquad \textbf{(E)}\ 34$" width="394" src="//latex.artofproblemsolving.com/f/3/3/f330b8f0a761750a2ec711044943a4e3687eacce.png" style="vertical-align: -4px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In square <img src="//latex.artofproblemsolving.com/2/4/9/249aa48167a0ec4808fb235a2796eaffab883dba.png" alt="$ABCE$" class="latex" width="56" height="13">, <img src="//latex.artofproblemsolving.com/4/c/d/4cdc4517b7ed61911044dd6122d4f99dcbc817ff.png" height="13" class="latex" alt="$AF=2FE$" width="89"> and <img class="latex" height="12" width="92" src="//latex.artofproblemsolving.com/8/6/b/86bf31381ea2f4a7c94d8571191b3c9e17c337a4.png" alt="$CD=2DE$">. What is the ratio of the area of <img alt="$\triangle BFD$" src="//latex.artofproblemsolving.com/4/d/b/4db8b31c18cec01817c2a504c27bd65c627c7159.png" class="latex" width="60" height="13"> to the area of square <img alt="$ABCE$" class="latex" src="//latex.artofproblemsolving.com/2/4/9/249aa48167a0ec4808fb235a2796eaffab883dba.png" width="56" height="13">?
+<img height="165" alt="[asy] size((100)); draw((0,0)--(9,0)--(9,9)--(0,9)--cycle); draw((3,0)--(9,9)--(0,3)--cycle); dot((3,0)); dot((0,3)); dot((9,9)); dot((0,0)); dot((9,0)); dot((0,9)); label(&quot;$A$&quot;, (0,9), NW); label(&quot;$B$&quot;, (9,9), NE); label(&quot;$C$&quot;, (9,0), SE); label(&quot;$D$&quot;, (3,0), S); label(&quot;$E$&quot;, (0,0), SW); label(&quot;$F$&quot;, (0,3), W); [/asy]" class="latexcenter" src="//latex.artofproblemsolving.com/6/c/d/6cd0313c1b06e23b6ae03cfe53c292b0ac2371db.png" width="168">
+</p><p><img src="//latex.artofproblemsolving.com/8/0/a/80ab237d874219c53eb155fad5993397982fa98e.png" class="latex" style="vertical-align: -13px" height="38" alt="$\textbf{(A)}\ \frac{1}{6}\qquad\textbf{(B)}\ \frac{2}{9}\qquad\textbf{(C)}\ \frac{5}{18}\qquad\textbf{(D)}\ \frac{1}{3}\qquad\textbf{(E)}\ \frac{7}{20}$" width="385">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Ten tiles numbered <img style="vertical-align: 0px" src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" width="8" class="latex" height="12" alt="$1$"> through <img width="17" src="//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png" style="vertical-align: 0px" alt="$10$" height="13" class="latex"> are turned face down. One tile is turned up at random, and a die is rolled. What is the probability that the product of the numbers on the tile and the die will be a square?
+</p><p><img class="latex" width="394" alt="$\textbf{(A)}\ \frac{1}{10}\qquad\textbf{(B)}\ \frac{1}{6}\qquad\textbf{(C)}\ \frac{11}{60}\qquad\textbf{(D)}\ \frac{1}{5}\qquad\textbf{(E)}\ \frac{7}{30}$" style="vertical-align: -13px" height="37" src="//latex.artofproblemsolving.com/a/f/a/afad31decec147072e55580ff6cdcf4ea6bc69a3.png">
+</p><p><br>
+</p>
+<h2><span id="Video_Solution" class="mw-headline">Video Solution</span></h2>
+<p><a href="https://www.youtube.com/watch?v=ZqPFm9cU0MY" rel="nofollow" class="external free">https://www.youtube.com/watch?v=ZqPFm9cU0MY</a>   ~David
+</p>
+<h2><span id="Video_Solution_by_Soo" class="mw-headline">Video Solution by Soo</span></h2>
+<p><a href="https://youtu.be/IUh28kMLLVE" class="external free" rel="nofollow">https://youtu.be/IUh28kMLLVE</a> - Soo, DRMS, NM
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Margie's winning art design is shown. The smallest circle has radius 2 inches, with each successive circle's radius increasing by 2 inches. Which of the following is closest to the percent of the design that is black?
+</p><p><img alt="[asy] real d=320; pair O=origin; pair P=O+8*dir(d); pair A0 = origin; pair A1 = O+1*dir(d); pair A2 = O+2*dir(d); pair A3 = O+3*dir(d); pair A4 = O+4*dir(d); pair A5 = O+5*dir(d); filldraw(Circle(A0, 6), white, black); filldraw(circle(A1, 5), black, black); filldraw(circle(A2, 4), white, black); filldraw(circle(A3, 3), black, black); filldraw(circle(A4, 2), white, black); filldraw(circle(A5, 1), black, black); [/asy]" class="latexcenter" width="252" src="//latex.artofproblemsolving.com/3/4/4/34420ee5e67e87663563a3047fde204ba36cff7f.png" height="252">
+</p><p><img height="17" alt="$\textbf{(A)}\ 42\qquad \textbf{(B)}\ 44\qquad \textbf{(C)}\ 45\qquad \textbf{(D)}\ 46\qquad \textbf{(E)}\ 48\qquad$" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/a/a/8/aa859b3c461cd6221fa7c0179d59d5b7a0a4d924.png" width="394" class="latex">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2009 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+<p>Andy and Bethany have a rectangular array of numbers with <img class="latex" src="//latex.artofproblemsolving.com/7/8/7/78792fe4680a164f537ea72a4f900e4471433c3b.png" alt="$40$" height="13" style="vertical-align: 0px" width="17"> rows and <img width="17" class="latex" alt="$75$" height="12" src="//latex.artofproblemsolving.com/a/7/e/a7e4c2930d79c57bee209557767b878cd704ea46.png"> columns. Andy adds the numbers in each row. The average of his <img style="vertical-align: 0px" height="13" class="latex" src="//latex.artofproblemsolving.com/7/8/7/78792fe4680a164f537ea72a4f900e4471433c3b.png" alt="$40$" width="17"> sums is <img alt="$A$" height="13" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" class="latex" width="13">. Bethany adds the numbers in each column. The average of her <img alt="$75$" height="12" width="17" class="latex" src="//latex.artofproblemsolving.com/a/7/e/a7e4c2930d79c57bee209557767b878cd704ea46.png"> sums is <img height="12" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" class="latex" width="14" alt="$B$">. What is the value of <img style="vertical-align: -12px" width="17" class="latex" alt="$\frac{A}{B}$" height="38" src="//latex.artofproblemsolving.com/2/c/4/2c4b24976c1967d7ab34d4dd4d7454fa19e46ee0.png">?
+</p><p><img height="38" class="latex" alt="$\textbf{(A)}\ \frac{64}{225}     \qquad \textbf{(B)}\   \frac{8}{15}    \qquad \textbf{(C)}\    1   \qquad \textbf{(D)}\   \frac{15}{8}    \qquad \textbf{(E)}\    \frac{225}{64}$" width="418" style="vertical-align: -13px" src="//latex.artofproblemsolving.com/b/2/8/b28391dc02ffbc32c2b5df9a68e1efe0b7f361bd.png">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>How many whole numbers between 1 and 1000 do <b>not</b> contain the digit 1?
+</p><p><img width="439" height="17" class="latex" src="//latex.artofproblemsolving.com/c/6/8/c68e98421520c9ab241eba3dcb6b3cfa3ec9fcd6.png" alt="$\textbf{(A)}\ 512 \qquad \textbf{(B)}\ 648 \qquad \textbf{(C)}\ 720 \qquad \textbf{(D)}\ 728 \qquad \textbf{(E)}\ 800$" style="vertical-align: -4px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+<p>On the last day of school, Mrs. Wonderful gave jelly beans to her class. She gave each boy as many jelly beans as there were boys in the class. She gave each girl as many jelly beans as there were girls in the class. She brought <img src="//latex.artofproblemsolving.com/e/8/9/e8924412a12becf7905729885a46e3e351ec5a86.png" width="26" alt="$400$" class="latex" height="13" style="vertical-align: 0px"> jelly beans, and when she finished, she had six jelly beans left. There were two more boys than girls in her class. How many students were in her class?
+</p><p><img alt="$\textbf{(A)}\ 26\qquad\textbf{(B)}\ 28\qquad\textbf{(C)}\ 30\qquad\textbf{(D)}\ 32\qquad\textbf{(E)}\ 34$" style="vertical-align: -4px" class="latex" height="17" width="394" src="//latex.artofproblemsolving.com/4/2/9/429d5528310491e7eee11b7bc79185efecff8aec.png">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+<p>The letters <img height="13" width="13" class="latex" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="$A$">, <img alt="$B$" height="12" class="latex" width="14" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png">, <img width="14" class="latex" src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" height="12" alt="$C$"> and <img height="12" src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="$D$" width="15" class="latex"> represent digits. If  <img alt="$\begin{tabular}{ccc}&amp;A&amp;B\\ +&amp;C&amp;A\\ \hline &amp;D&amp;A\end{tabular}$" height="53" class="latex" src="//latex.artofproblemsolving.com/9/e/0/9e038ac6d7b55bdbff7c3c73326eecdcb61254cd.png" width="98" style="vertical-align: -20px">and <img class="latex" width="90" src="//latex.artofproblemsolving.com/2/3/9/239389e56191fe562b2cd80bde3386d1906797db.png" alt="$\begin{tabular}{ccc}&amp;A&amp;B\\ -&amp;C&amp;A\\ \hline &amp;&amp;A\end{tabular}$" height="53" style="vertical-align: -20px">,what digit does <img src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="$D$" width="15" height="12" class="latex"> represent?
+</p><p><img width="348" class="latex" alt="$\textbf{(A)}\ 5\qquad\textbf{(B)}\ 6\qquad\textbf{(C)}\ 7\qquad\textbf{(D)}\ 8\qquad\textbf{(E)}\ 9$" src="//latex.artofproblemsolving.com/a/9/7/a97af68b0e27ddcc9bb656fba006759ed49696f2.png" style="vertical-align: -4px" height="17">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A one-cubic-foot cube is cut into four pieces by three cuts parallel to the top face of the cube. The first cut is <img height="37" width="11" alt="$\frac{1}{2}$" class="latex" src="//latex.artofproblemsolving.com/2/f/9/2f960094315d60883495f9b74148e17487ee9584.png" style="vertical-align: -12px"> foot from the top face. The second cut is <img alt="$\frac{1}{3}$" src="//latex.artofproblemsolving.com/4/e/1/4e1965f8d70832ded66434c75a7bd52b75090af0.png" width="11" style="vertical-align: -12px" class="latex" height="37"> foot below the first cut, and the third cut is <img width="20" src="//latex.artofproblemsolving.com/4/0/b/40b9d7cf3773dd2eab0e234a92a59a86cfee871d.png" class="latex" height="37" alt="$\frac{1}{17}$" style="vertical-align: -13px"> foot below the second cut. From the top to the bottom the pieces are labeled A, B, C, and D. The pieces are then glued together end to end as shown in the second diagram. What is the total surface area of this solid in square feet?
+<img alt="[asy] import three; real d=11/102; defaultpen(fontsize(8)); defaultpen(linewidth(0.8)); currentprojection=orthographic(1,8/15,7/15); draw(unitcube, white, thick(), nolight); void f(real x) { draw((0,1,x)--(1,1,x)--(1,0,x)); } f(d); f(1/6); f(1/2); label(&quot;A&quot;, (1,0,3/4), W); label(&quot;B&quot;, (1,0,1/3), W); label(&quot;C&quot;, (1,0,1/6-d/4), W); label(&quot;D&quot;, (1,0,d/2), W); label(&quot;1/2&quot;, (1,1,3/4), E); label(&quot;1/3&quot;, (1,1,1/3), E); label(&quot;1/17&quot;, (0,1,1/6-d/4), E);[/asy]" class="latexcenter" src="//latex.artofproblemsolving.com/3/9/7/3977b5be01a243040aa706b7f678b5ef8c594486.png" height="655" width="658">
+</p><p><img alt="[asy] import three; real d=11/102; defaultpen(fontsize(8)); defaultpen(linewidth(0.8)); currentprojection=orthographic(2,8/15,7/15); int t=0; void f(real x) { path3 r=(t,1,x)--(t+1,1,x)--(t+1,1,0)--(t,1,0)--cycle; path3 f=(t+1,1,x)--(t+1,1,0)--(t+1,0,0)--(t+1,0,x)--cycle; path3 u=(t,1,x)--(t+1,1,x)--(t+1,0,x)--(t,0,x)--cycle; draw(surface(r), white, nolight); draw(surface(f), white, nolight); draw(surface(u), white, nolight); draw((t,1,x)--(t+1,1,x)--(t+1,1,0)--(t,1,0)--(t,1,x)--(t,0,x)--(t+1,0,x)--(t+1,1,x)--(t+1,1,0)--(t+1,0,0)--(t+1,0,x)); t=t+1; } f(d); f(1/2); f(1/3); f(1/17); label(&quot;D&quot;, (1/2, 1, 0), SE); label(&quot;A&quot;, (1+1/2, 1, 0), SE); label(&quot;B&quot;, (2+1/2, 1, 0), SE); label(&quot;C&quot;, (3+1/2, 1, 0), SE);[/asy]" src="//latex.artofproblemsolving.com/b/8/3/b83dcb80466742b64848dd3d7e106eccd92292ed.png" class="latexcenter" height="398" width="668">
+</p><p><img width="394" src="//latex.artofproblemsolving.com/9/c/b/9cb6838503eb63cad0609f5000f29f0646adc980.png" class="latex" alt="$\textbf{(A)}\:6\qquad\textbf{(B)}\:7\qquad\textbf{(C)}\:\frac{419}{51}\qquad\textbf{(D)}\:\frac{158}{17}\qquad\textbf{(E)}\:11$" height="38" style="vertical-align: -13px">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2010 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Hui is an avid reader. She bought a copy of the best seller <i>Math is Beautiful</i>. On the first day, Hui read <img alt="$1/5$" class="latex" src="//latex.artofproblemsolving.com/4/3/8/4386436ff16509fe977cc2c9f87c3f170990b8f3.png" height="18" style="vertical-align: -4px" width="26"> of the pages plus <img style="vertical-align: 0px" class="latex" alt="$12$" width="17" height="12" src="//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png"> more, and on the second day she read <img width="27" src="//latex.artofproblemsolving.com/8/f/8/8f88d403085fe6600059002646348a5f267266d1.png" height="18" style="vertical-align: -4px" alt="$1/4$" class="latex"> of the remaining pages plus <img height="13" src="//latex.artofproblemsolving.com/f/1/9/f1965fae079a9ba2c0726c307070c2355dfcb213.png" alt="$15$" class="latex" width="17" style="vertical-align: 0px"> pages. On the third day she read <img alt="$1/3$" src="//latex.artofproblemsolving.com/2/1/7/217aedbdc339bacc8ba075a2ec16902b098194e3.png" class="latex" width="26" height="18" style="vertical-align: -4px"> of the remaining pages plus <img src="//latex.artofproblemsolving.com/5/e/7/5e7a1b6098a8c98b8e4adae526aeef4b91712620.png" class="latex" style="vertical-align: 0px" height="13" width="17" alt="$18$"> pages. She then realized that there were only <img alt="$62$" class="latex" width="17" height="12" src="//latex.artofproblemsolving.com/3/e/6/3e67376d85a21889a01b76d7c9d8c765b2bac379.png"> pages left to read, which she read the next day. How many pages are in this book?
+</p><p><img src="//latex.artofproblemsolving.com/d/6/0/d6052ada2f93c38c8d5377cce3b55d683297cbf6.png" alt="$\textbf{(A)}\ 120 \qquad\textbf{(B)}\ 180\qquad\textbf{(C)}\ 240\qquad\textbf{(D)}\ 300\qquad\textbf{(E)}\ 360$" width="439" height="17" class="latex" style="vertical-align: -4px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>The hundreds digit of a three-digit number is <img height="12" class="latex" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" alt="$2$" width="8"> more than the units digit. The digits of the three-digit number are reversed, and the result is subtracted from the original three-digit number. What is the units digit of the result?
+</p><p><img height="17" src="//latex.artofproblemsolving.com/a/0/b/a0b4d082b8cb618cd2ee8ec7ad7846af5e4ff6fa.png" style="vertical-align: -4px" class="latex" alt="$\textbf{(A)}\ 0 \qquad\textbf{(B)}\ 2\qquad\textbf{(C)}\ 4\qquad\textbf{(D)}\ 6\qquad\textbf{(E)}\ 8$" width="348">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Semicircles <img alt="$POQ$" class="latex" src="//latex.artofproblemsolving.com/0/a/f/0af8bd418bbfcc17ee85fd2d959d120c3df86222.png" width="42" height="16" style="vertical-align: -3px"> and <img height="12" width="40" alt="$ROS$" src="//latex.artofproblemsolving.com/0/0/5/005a2a7f4c26937a68ef0365600a36309846fa24.png" class="latex"> pass through the center <img width="13" src="//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png" class="latex" alt="$O$" height="12">. What is the ratio of the combined areas of the two semicircles to the area of circle <img alt="$O$" class="latex" width="13" height="12" src="//latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png">?
+</p><p><img width="358" src="//latex.artofproblemsolving.com/6/f/e/6fef195a7bd352396d3561535ac6c4b7e2c67129.png" alt="[asy] import graph; size(7.5cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-6.27,xmax=10.01,ymin=-5.65,ymax=10.98; draw(circle((0,0),2)); draw((-3,0)--(3,0),EndArrow(6)); draw((0,-3)--(0,3),EndArrow(6)); draw(shift((0.01,1.42))*xscale(1.41)*yscale(1.41)*arc((0,0),1,179.76,359.76)); draw(shift((-0.01,-1.42))*xscale(1.41)*yscale(1.41)*arc((0,0),1,-0.38,179.62)); draw((-1.4,1.43)--(1.41,1.41)); draw((-1.42,-1.41)--(1.4,-1.42)); label(&quot;$ P(-1,1) $&quot;,(-2.57,2.17),SE*lsf); label(&quot;$ Q(1,1) $&quot;,(1.55,2.21),SE*lsf); label(&quot;$ R(-1,-1) $&quot;,(-2.72,-1.45),SE*lsf); label(&quot;$S(1,-1)$&quot;,(1.59,-1.49),SE*lsf);  dot((0,0),ds); label(&quot;$O$&quot;,(-0.24,-0.35),NE*lsf); dot((1.41,1.41),ds); dot((-1.4,1.43),ds); dot((1.4,-1.42),ds); dot((-1.42,-1.41),ds);  clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);[/asy]" height="358" class="latexcenter">
+</p><p><img width="400" style="vertical-align: -13px" height="41" alt="$\textbf{(A)}\ \frac{\sqrt 2}{4}\qquad\textbf{(B)}\ \frac{1}{2}\qquad\textbf{(C)}\ \frac{2}{\pi}\qquad\textbf{(D)}\ \frac{2}{3}\qquad\textbf{(E)}\ \frac{\sqrt 2}{2}$" src="//latex.artofproblemsolving.com/7/9/6/7960b0638ff19b3d2a49003f7a0ca2d9af4643f8.png" class="latex">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>What is the correct ordering of the three numbers, <img height="15" class="latex" width="24" alt="$10^8$" style="vertical-align: 0px" src="//latex.artofproblemsolving.com/b/1/8/b18e705cb4e33fb02736028bc220761b3755e8a1.png">, <img width="21" class="latex" src="//latex.artofproblemsolving.com/9/0/3/90344030c1d8884b18daf2e4852bfd0c7cc0dc8b.png" alt="$5^{12}$" height="15">, and <img alt="$2^{24}$" width="22" class="latex" height="15" src="//latex.artofproblemsolving.com/0/6/4/0643eed365042783e35d23dfe6a360e78eff182b.png">?
+</p><p><img height="98" class="latex" width="154" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/7/7/6/776019fea772c5c893d87b9b54aaa5583a433573.png" alt="$\textbf{(A)}\ 2^{24}<10^8<5^{12}\\ \textbf{(B)}\ 2^{24}<5^{12}<10^8 \\  \textbf{(C)}\ 5^{12}<2^{24}<10^8 \\ \textbf{(D)}\ 10^8<5^{12}<2^{24} \\ \textbf{(E)}\ 10^8<2^{24}<5^{12}$">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Everyday at school, Jo climbs a flight of <img alt="$6$" height="12" width="8" src="//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png" class="latex"> stairs. Jo can take the stairs <img style="vertical-align: 0px" src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" height="12" width="8" alt="$1$" class="latex">, <img src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" width="8" height="12" alt="$2$" class="latex">, or <img src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="$3$" height="12" width="8" class="latex"> at a time. For example, Jo could climb <img class="latex" width="8" height="12" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="$3$">, then <img width="8" style="vertical-align: 0px" class="latex" src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" height="12" alt="$1$">, then <img class="latex" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" width="8" alt="$2$" height="12">. In how many ways can Jo climb the stairs?
+</p><p><img alt="$\textbf{(A)}\ 13 \qquad\textbf{(B)}\ 18\qquad\textbf{(C)}\ 20\qquad\textbf{(D)}\ 22\qquad\textbf{(E)}\ 24$" class="latex" width="394" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/5/4/2/5428b82166ae38ea947bae7c73ec35c3136b5480.png" height="17">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2011 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Students guess that Norb's age is <img height="16" alt="$24, 28, 30, 32, 36, 38, 41, 44, 47$" width="228" class="latex" style="vertical-align: -3px" src="//latex.artofproblemsolving.com/b/5/1/b51263dbe00e969b9f78b8caae46d3712d444c2c.png">, and <img style="vertical-align: 0px" alt="$49$" src="//latex.artofproblemsolving.com/3/4/c/34c8e6bf4d57cd6f2bb0d7d43e00f0f442f53b84.png" width="17" height="13" class="latex">. Norb says, "At least half of you guessed too low, two of you are off by one, and my age is a prime number." How old is Norb?
+</p><p><img height="17" class="latex" style="vertical-align: -4px" alt="$\textbf{(A) }29\qquad\textbf{(B) }31\qquad\textbf{(C) }37\qquad\textbf{(D) }43\qquad\textbf{(E) }48$" src="//latex.artofproblemsolving.com/0/b/b/0bb57ac71bc1c04f6d7717043b104ba27f52c452.png" width="398">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>What is the tens digit of <img alt="$7^{2011}$" src="//latex.artofproblemsolving.com/2/d/5/2d5a55875f8fdc092dcbce4590fcf7096608deaf.png" class="latex" height="15" width="34">?
+</p><p><img style="vertical-align: -4px" height="17" class="latex" width="353" alt="$\textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }3\qquad\textbf{(D) }4\qquad\textbf{(E) }7$" src="//latex.artofproblemsolving.com/b/a/3/ba35794c7ca97cbcd108fbb65e1e4bf27bca0a5a.png">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>How many 4-digit positive integers have four different digits, where the leading digit is not zero, the integer is a multiple of 5, and 5 is the largest digit?
+</p><p><img height="17" class="latex" alt="$\textbf{(A) }24\qquad\textbf{(B) }48\qquad\textbf{(C) }60\qquad\textbf{(D) }84\qquad\textbf{(E) }108$" src="//latex.artofproblemsolving.com/c/6/a/c6aab5f5b9e9d251db5bcdd363e64bd5f53cc71b.png" style="vertical-align: -4px" width="407">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In how many ways can <img alt="$10001$" class="latex" width="44" src="//latex.artofproblemsolving.com/d/e/8/de84c0b376e89ec3e59a710eff23de3350bec3c9.png" style="vertical-align: 0px" height="13"> be written as the sum of two primes?
+</p><p><img width="353" class="latex" src="//latex.artofproblemsolving.com/e/c/8/ec810d27bbe2b381d2e1613286cf7af3797c13d9.png" height="17" style="vertical-align: -4px" alt="$\textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }2\qquad\textbf{(D) }3\qquad\textbf{(E) }4$">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A circle with radius <img style="vertical-align: 0px" class="latex" src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" height="12" width="8" alt="$1$"> is inscribed in a square and circumscribed about another square as shown. Which fraction is closest to the ratio of the circle's shaded area to the area between the two squares?
+</p><p><img src="//latex.artofproblemsolving.com/e/c/1/ec1e342aed303af8799c42492f077aab15037276.png" height="252" alt="[asy] filldraw((-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle,gray,black); filldraw(Circle((0,0),1), mediumgray,black); filldraw((-1,0)--(0,1)--(1,0)--(0,-1)--cycle,white,black);[/asy]" class="latexcenter" width="252">
+</p><p><img class="latex" style="vertical-align: -12px" width="359" alt="$\textbf{(A)}\ \frac{1}2\qquad\textbf{(B)}\ 1\qquad\textbf{(C)}\ \frac{3}2\qquad\textbf{(D)}\ 2\qquad\textbf{(E)}\ \frac{5}2$" src="//latex.artofproblemsolving.com/3/2/c/32c7aba5214bbfffde1cc6b0489285f9f1485bef.png" height="37">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2012 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Marla has a large white cube that has an edge of 10 feet. She also has enough green paint to cover 300 square feet. Marla uses all the paint to create a white square centered on each face, surrounded by a green border. What is the area of one of the white squares, in square feet?
+<img style="vertical-align: -4px" width="461" src="//latex.artofproblemsolving.com/0/6/4/0640c0916b06d976473efa8279cf18422bd48d59.png" alt="$\textbf{(A)}\hspace{.05in}5\sqrt2\qquad\textbf{(B)}\hspace{.05in}10\qquad\textbf{(C)}\hspace{.05in}10\sqrt2\qquad\textbf{(D)}\hspace{.05in}50\qquad\textbf{(E)}\hspace{.05in}50\sqrt2$" class="latex" height="21">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Let <img src="//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" alt="$R$" width="14" height="12" class="latex">  be a set of nine distinct integers. Six of the elements are <img class="latex" alt="$2$" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" width="8" height="12">, <img src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" class="latex" height="12" width="8" alt="$3$">, <img style="vertical-align: 0px" width="9" src="//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png" height="12" class="latex" alt="$4$">, <img height="12" width="8" alt="$6$" src="//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png" class="latex">, <img width="8" height="12" class="latex" src="//latex.artofproblemsolving.com/b/f/2/bf2c9074b396e3af0dea52d792660eea1c77f10f.png" alt="$9$">, and <img src="//latex.artofproblemsolving.com/8/2/0/820a20de2847dfdc1bc5cffc8d904933150032bd.png" class="latex" alt="$14$" style="vertical-align: 0px" width="18" height="12">. What is the number of possible values of the median of <img alt="$R$" width="14" src="//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" height="12" class="latex">?
+</p><p><img src="//latex.artofproblemsolving.com/4/d/4/4d44ef6bc7107d8c6ae4ff612c80523c1ad5cfe9.png" height="17" style="vertical-align: -4px" width="351" alt="$\textbf{(A)}\hspace{.05in}4\qquad\textbf{(B)}\hspace{.05in}5\qquad\textbf{(C)}\hspace{.05in}6\qquad\textbf{(D)}\hspace{.05in}7\qquad\textbf{(E)}\hspace{.05in}8$" class="latex">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>An equilateral triangle and a regular hexagon have equal perimeters. If the triangle's area is 4, what is the area of the hexagon?
+</p><p><img style="vertical-align: -4px" src="//latex.artofproblemsolving.com/4/7/e/47e97b6ce1877b8841935688be31d2ab7dbcb776.png" class="latex" height="21" alt="$\textbf{(A)}\hspace{.05in}4\qquad\textbf{(B)}\hspace{.05in}5\qquad\textbf{(C)}\hspace{.05in}6\qquad\textbf{(D)}\hspace{.05in}4\sqrt3\qquad\textbf{(E)}\hspace{.05in}6\sqrt3$" width="400">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A circle of radius <img width="8" alt="$2$" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" height="12" class="latex"> is cut into four congruent arcs. The four arcs are joined to form the star figure shown. What is the ratio of the area of the star figure to the area of the original circle?
+</p><p><img height="85" src="//latex.artofproblemsolving.com/4/f/e/4fe4633986b1f264beb80f6015661aef00c4f803.png" width="202" class="latexcenter" alt="[asy] size(0,50); draw((-1,1)..(-2,2)..(-3,1)..(-2,0)..cycle); dot((-1,1)); dot((-2,2)); dot((-3,1)); dot((-2,0)); draw((1,0){up}..{left}(0,1)); dot((1,0)); dot((0,1)); draw((0,1){right}..{up}(1,2)); dot((1,2)); draw((1,2){down}..{right}(2,1)); dot((2,1)); draw((2,1){left}..{down}(1,0));[/asy]">
+</p><p><br>
+<img height="41" class="latex" alt="$\textbf{(A)}\hspace{.05in}\frac{4-\pi}{\pi}\qquad\textbf{(B)}\hspace{.05in}\frac{1}\pi\qquad\textbf{(C)}\hspace{.05in}\frac{\sqrt2}{\pi}\qquad\textbf{(D)}\hspace{.05in}\frac{\pi-1}{\pi}\qquad\textbf{(E)}\hspace{.05in}\frac{3}\pi$" style="vertical-align: -12px" width="455" src="//latex.artofproblemsolving.com/6/d/2/6d2686fcd20eb5e1638ae6133ef7a5f95535679b.png">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A square with area <img alt="$4$" style="vertical-align: 0px" src="//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png" height="12" class="latex" width="9"> is inscribed in a square with area <img width="8" height="12" src="//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png" alt="$5$" class="latex">, with each vertex of the smaller square on a side of the larger square. A vertex of the smaller square divides a side of the larger square into two segments, one of length <img src="//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png" height="8" width="9" alt="$a$" class="latex">, and the other of length <img alt="$b$" class="latex" height="12" width="8" src="//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png">. What is the value of <img src="//latex.artofproblemsolving.com/e/f/8/ef870ce9fefe09b80a97b05a7b9198414c1b35f7.png" height="12" width="17" class="latex" alt="$ab$">?
+</p><p><img height="232" src="//latex.artofproblemsolving.com/3/d/4/3d4cdd3dbcabe3dc76b806d60b785416afc65f11.png" width="252" alt="[asy] draw((0,2)--(2,2)--(2,0)--(0,0)--cycle); draw((0,0.3)--(0.3,2)--(2,1.7)--(1.7,0)--cycle); label(&quot;$a$&quot;,(-0.1,0.15)); label(&quot;$b$&quot;,(-0.1,1.15));[/asy]" class="latexcenter">
+</p><p><img height="37" src="//latex.artofproblemsolving.com/8/b/b/8bb18a59eb286ec18f14647f4337672f9db3251d.png" style="vertical-align: -12px" class="latex" alt="$\textbf{(A)}\hspace{.05in}\frac{1}5\qquad\textbf{(B)}\hspace{.05in}\frac{2}5\qquad\textbf{(C)}\hspace{.05in}\frac{1}2\qquad\textbf{(D)}\hspace{.05in}1\qquad\textbf{(E)}\hspace{.05in}4$" width="363">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2013 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Samantha lives 2 blocks west and 1 block south of the southwest corner of City Park. Her school is 2 blocks east and 2 blocks north of the northeast corner of City Park. On school days she bikes on streets to the southwest corner of City Park, then takes a diagonal path through the park to the northeast corner, and then bikes on streets to school. If her route is as short as possible, how many different routes can she take?
+</p><p><img style="vertical-align: -4px" class="latex" alt="$\textbf{(A)}\ 3 \qquad \textbf{(B)}\ 6 \qquad \textbf{(C)}\ 9 \qquad \textbf{(D)}\ 12 \qquad \textbf{(E)}\ 18$" src="//latex.artofproblemsolving.com/3/c/1/3c1dc5925544b75b86efceec438d433a39f318bb.png" width="366" height="17">
+</p>
+<h2><span id="Video_Solution_by_OmegaLearn_Using_Geometric_Counting" class="mw-headline">Video Solution by OmegaLearn Using Geometric Counting</span></h2>
+<p><a href="https://youtu.be/OOdK-nOzaII?t=2679" rel="nofollow" class="external free">https://youtu.be/OOdK-nOzaII?t=2679</a>
+</p><p>~ pi_is_3.14
+</p>
+<h2><span id="Video_Solution" class="mw-headline">Video Solution</span></h2>
+<p><a class="external free" href="https://www.youtube.com/watch?v=7hQYzA6lsVc" rel="nofollow">https://www.youtube.com/watch?v=7hQYzA6lsVc</a>   ~David
+</p><p><a class="external free" href="https://youtu.be/9nveueuZiqs" rel="nofollow">https://youtu.be/9nveueuZiqs</a> ~savannahsolver
+</p>
+<h2><span class="mw-headline" id="Video_Solution_for_Problems_21-25">Video Solution for Problems 21-25</span></h2>
+<p><a rel="nofollow" class="external free" href="https://youtu.be/-mi3qziCuec">https://youtu.be/-mi3qziCuec</a>
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Toothpicks are used to make a grid that is <img alt="$60$" src="//latex.artofproblemsolving.com/3/0/2/302e99c1c7cd91a6ae371139e5142ccef5977dca.png" width="17" class="latex" height="12"> toothpicks long and <img alt="$32$" width="17" height="12" class="latex" src="//latex.artofproblemsolving.com/4/f/4/4f4b8590f8aa9f9894b3891dd5dede0e354fa04e.png"> toothpicks wide. How many toothpicks are used altogether?
+</p><p><img height="185" src="//latex.artofproblemsolving.com/c/6/1/c610668e8c5623b4247005f01744cde6726b65a9.png" class="latexcenter" alt="[asy] picture corner; draw(corner,(5,0)--(35,0)); draw(corner,(0,-5)--(0,-35)); for (int i=0; i<3; ++i){for (int j=0; j>-2; --j){if ((i-j)<3){add(corner,(50i,50j));}}} draw((5,-100)--(45,-100)); draw((155,0)--(185,0),dotted+linewidth(2)); draw((105,-50)--(135,-50),dotted+linewidth(2)); draw((100,-55)--(100,-85),dotted+linewidth(2)); draw((55,-100)--(85,-100),dotted+linewidth(2)); draw((50,-105)--(50,-135),dotted+linewidth(2)); draw((0,-105)--(0,-135),dotted+linewidth(2));[/asy]" width="252">
+</p><p><img width="484" height="17" src="//latex.artofproblemsolving.com/7/f/f/7ff40ae7d52d007b00b0a0f497473670461c5bec.png" alt="$\textbf{(A)}\ 1920 \qquad \textbf{(B)}\ 1952 \qquad \textbf{(C)}\ 1980 \qquad \textbf{(D)}\ 2013 \qquad \textbf{(E)}\ 3932$" style="vertical-align: -4px" class="latex">
+</p>
+<h2><span class="mw-headline" id="Video_Solution_for_Problems_21-25">Video Solution for Problems 21-25</span></h2>
+<p><a rel="nofollow" href="https://youtu.be/-mi3qziCuec" class="external free">https://youtu.be/-mi3qziCuec</a>
+</p>
+<h2><span id="Video_Solution" class="mw-headline">Video Solution</span></h2>
+<p><a rel="nofollow" class="external free" href="https://youtu.be/nNDdkv_zfOo">https://youtu.be/nNDdkv_zfOo</a> ~savannahsolver
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Angle <img width="42" alt="$ABC$" class="latex" height="13" src="//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png"> of <img class="latex" width="58" height="13" src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" alt="$\triangle ABC$"> is a right angle. The sides of <img class="latex" alt="$\triangle ABC$" height="13" width="58" src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png"> are the diameters of semicircles as shown. The area of the semicircle on <img width="28" class="latex" src="//latex.artofproblemsolving.com/8/4/0/840e2b592390eb6ec918fa6f3292716ce170de66.png" alt="$\overline{AB}$" height="15"> equals <img src="//latex.artofproblemsolving.com/9/f/b/9fb1c2c9bfe3fc5bca66d58ba9a8cd476ae446d8.png" width="19" height="12" class="latex" alt="$8\pi$">, and the arc of the semicircle on <img src="//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png" width="28" height="15" class="latex" alt="$\overline{AC}$"> has length <img width="33" height="12" src="//latex.artofproblemsolving.com/e/8/9/e893f99451cff638b20c35d567bb17ad5b3793d7.png" class="latex" alt="$8.5\pi$">. What is the radius of the semicircle on <img height="15" src="//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png" alt="$\overline{BC}$" class="latex" width="29">?
+<img width="252" src="//latex.artofproblemsolving.com/2/6/2/2624acb19756f1b697f71413e9840070908905da.png" alt="[asy] import graph; pair A,B,C; A=(0,8); B=(0,0); C=(15,0); draw((0,8)..(-4,4)..(0,0)--(0,8)); draw((0,0)..(7.5,-7.5)..(15,0)--(0,0)); real theta = aTan(8/15); draw(arc((15/2,4),17/2,-theta,180-theta)); draw((0,8)--(15,0)); dot(A); dot(B); dot(C); label(&quot;$A$&quot;, A, NW); label(&quot;$B$&quot;, B, SW); label(&quot;$C$&quot;, C, SE);[/asy]" class="latexcenter" height="242">
+</p><p><img src="//latex.artofproblemsolving.com/3/a/6/3a6df2d3ecea84a3faaf22af187a77bf7127fee1.png" class="latex" height="17" style="vertical-align: -4px" width="377" alt="$\textbf{(A)}\ 7 \qquad \textbf{(B)}\ 7.5 \qquad \textbf{(C)}\ 8 \qquad \textbf{(D)}\ 8.5 \qquad \textbf{(E)}\ 9$">
+</p>
+<h2><span class="mw-headline" id="Video_Solution_for_Problems_21-25">Video Solution for Problems 21-25</span></h2>
+<p><a rel="nofollow" class="external free" href="https://youtu.be/-mi3qziCuec">https://youtu.be/-mi3qziCuec</a>
+</p>
+<h2><span class="mw-headline" id="Video_Solution">Video Solution</span></h2>
+<p><a class="external free" rel="nofollow" href="https://youtu.be/crR3uNwKjk0">https://youtu.be/crR3uNwKjk0</a> ~savannahsolver
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Squares <img alt="$ABCD$" height="13" width="57" src="//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png" class="latex">, <img class="latex" src="//latex.artofproblemsolving.com/9/7/3/9735b37ac43861ef9e105bff1711f117917b09ec.png" alt="$EFGH$" width="59" height="12">, and <img src="//latex.artofproblemsolving.com/8/3/3/83357600a32dc213f800922786ff07c27be954f2.png" class="latex" height="12" alt="$GHIJ$" width="52"> are equal in area. Points <img src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" width="14" class="latex" height="12" alt="$C$"> and <img width="15" class="latex" src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" height="12" alt="$D$"> are the midpoints of sides <img src="//latex.artofproblemsolving.com/7/9/8/798a1cea398f29087ec5d72ff1bfef89d52ee835.png" class="latex" width="26" height="12" alt="$IH$"> and <img width="30" src="//latex.artofproblemsolving.com/7/3/8/7381d73a5fd25fe335bba4cd0b2219adaf09ed3f.png" class="latex" alt="$HE$" height="12">, respectively. What is the ratio of the area of the shaded pentagon <img src="//latex.artofproblemsolving.com/f/4/4/f44f7fd1eb74392be12c584465a560156e820d99.png" width="63" class="latex" alt="$AJICB$" height="13"> to the sum of the areas of the three squares?
+</p><p><img width="388" height="38" class="latex" alt="$\textbf{(A)}\hspace{.05in}\frac{1}{4}\qquad\textbf{(B)}\hspace{.05in}\frac{7}{24}\qquad\textbf{(C)}\hspace{.05in}\frac{1}{3}\qquad\textbf{(D)}\hspace{.05in}\frac{3}{8}\qquad\textbf{(E)}\hspace{.05in}\frac{5}{12}$" style="vertical-align: -13px" src="//latex.artofproblemsolving.com/5/b/2/5b2b73722908630bee557f37fc8e4a5e91966797.png">
+</p><p><img class="latexcenter" alt="[asy] pair A,B,C,D,E,F,G,H,I,J;  A = (0.5,2); B = (1.5,2); C = (1.5,1); D = (0.5,1); E = (0,1); F = (0,0); G = (1,0); H = (1,1); I = (2,1); J = (2,0);  draw(A--B);  draw(C--B);  draw(D--A);   draw(F--E);  draw(I--J);  draw(J--F);  draw(G--H);  draw(A--J);  filldraw(A--B--C--I--J--cycle,grey); draw(E--I); dot(&quot;$A$&quot;, A, NW); dot(&quot;$B$&quot;, B, NE); dot(&quot;$C$&quot;, C, NE); dot(&quot;$D$&quot;, D, NW); dot(&quot;$E$&quot;, E, NW); dot(&quot;$F$&quot;, F, SW); dot(&quot;$G$&quot;, G, S); dot(&quot;$H$&quot;, H, N); dot(&quot;$I$&quot;, I, NE); dot(&quot;$J$&quot;, J, SE); [/asy]" width="252" height="252" src="//latex.artofproblemsolving.com/1/6/9/169139bda69e81f8342f246f95cc3f636c1f9abe.png">
+</p>
+<h1><span id="=Video_Solution_for_Problems_21-25"></span><span id=".3DVideo_Solution_for_Problems_21-25" class="mw-headline">=Video Solution for Problems 21-25</span></h1>
+<p><a class="external free" href="https://youtu.be/-mi3qziCuec" rel="nofollow">https://youtu.be/-mi3qziCuec</a>
+</p>
+<h2><span class="mw-headline" id="Video_Solution">Video Solution</span></h2>
+<p><a href="https://youtu.be/sbBjMvq5GG4" rel="nofollow" class="external free">https://youtu.be/sbBjMvq5GG4</a> ~savannahsolver
+</p><p>Easy Solution1-<br>
+let side of 1 square be= 2 (doesn't matter if we are calculating ratios)<br>
+Then, total area= 3x2^2=12<br>
+Shaded area=Total area - Unshaded area<br>
+Unshaded area = [AJFEDA]<br>
+We can now extend AD to the centre point of FG. This can be called y.<br>
+△AJY[{(2+2) x 2+(2/2)}/2]=6 + [DEFY]=2x1=2<br>
+Unshaded area=6+2=8<br>
+Shaded area = 12-8=4 <br>
+Hence, ratio= 4/12 = 1/3<br>
+~aarnavSOni
+</p>
+<h2><span class="mw-headline" id="Easiest_Solution">Easiest Solution</span></h2>
+<p>We can see that the Pentagon is made of two congruent shapes. We can fit one triangle into the gap in the upper square. Therefore, the answer is just <img src="//latex.artofproblemsolving.com/b/e/2/be23ade478c7d6a60b15a8608a14ac0f714609e3.png" height="37" style="vertical-align: -12px" width="88" class="latex" alt="$\frac{1}{3}\implies\boxed{C}$">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A ball with diameter 4 inches starts at point A to roll along the track shown. The track is comprised of 3 semicircular arcs whose radii are <img style="vertical-align: -2px" alt="$R_1 = 100$" width="72" src="//latex.artofproblemsolving.com/8/9/6/8965b3bca1ea2adb81f19f46efd29d9d04f91ce6.png" height="15" class="latex"> inches, <img style="vertical-align: -2px" height="15" class="latex" alt="$R_2 = 60$" src="//latex.artofproblemsolving.com/8/0/1/80166acbecae2eeca30cb67088c35fe15ff32e96.png" width="63"> inches, and <img class="latex" style="vertical-align: -2px" width="63" alt="$R_3 = 80$" src="//latex.artofproblemsolving.com/c/0/b/c0bf95abfd8445aa23b5740ce2ae69f6e6231970.png" height="15"> inches, respectively. The ball always remains in contact with the track and does not slip. What is the distance the center of the ball travels over the course from A to B?
+</p><p><img width="378" src="//latex.artofproblemsolving.com/3/a/c/3ac0f4254d038847d9ee52d724bc0df18b1b1df4.png" class="latexcenter" height="115" alt="[asy] pair A,B; size(8cm); A=(0,0); B=(480,0); draw((0,0)--(480,0),linetype(&quot;3 4&quot;)); filldraw(circle((8,0),8),black); draw((0,0)..(100,-100)..(200,0)); draw((200,0)..(260,60)..(320,0)); draw((320,0)..(400,-80)..(480,0)); draw((100,0)--(150,-50sqrt(3)),Arrow(size=4)); draw((260,0)--(290,30sqrt(3)),Arrow(size=4)); draw((400,0)--(440,-40sqrt(3)),Arrow(size=4)); label(&quot;$A$&quot;, A, SW); label(&quot;$B$&quot;, B, SE); label(&quot;$R_1$&quot;, (100,-40), W); label(&quot;$R_2$&quot;, (260,40), SW); label(&quot;$R_3$&quot;, (400,-40), W);[/asy]">
+</p><p><img width="494" alt="$\textbf{(A)}\ 238\pi \qquad \textbf{(B)}\ 240\pi \qquad \textbf{(C)}\ 260\pi \qquad \textbf{(D)}\ 280\pi \qquad \textbf{(E)}\ 500\pi$" height="17" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/a/d/0/ad0cb931e094f905cd82312a54eeab1f21a270ba.png" class="latex">
+</p>
+<h2><span id="Video_Solution_for_Problems_21-25" class="mw-headline">Video Solution for Problems 21-25</span></h2>
+<p><a rel="nofollow" class="external free" href="https://youtu.be/-mi3qziCuec">https://youtu.be/-mi3qziCuec</a>
+</p>
+<h2><span class="mw-headline" id="Video_Solution">Video Solution</span></h2>
+<p><a class="external free" rel="nofollow" href="https://youtu.be/zZGuBFyiQrk">https://youtu.be/zZGuBFyiQrk</a> ~savannahsolver
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2014 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>The <img width="9" alt="$7$" src="//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png" class="latex" height="12">-digit numbers <img width="74" src="//latex.artofproblemsolving.com/a/8/9/a897d8705cfd42842413a292be917e6c3786e490.png" style="vertical-align: -3px" alt="$\underline{7} \underline{4} \underline{A} \underline{5} \underline{2} \underline{B} \underline{1}$" height="16" class="latex"> and <img src="//latex.artofproblemsolving.com/1/e/1/1e1b385290b8619f80cd97e95efbcf2cf5ca31e2.png" height="16" style="vertical-align: -3px" width="79" class="latex" alt="$\underline{3} \underline{2} \underline{6} \underline{A} \underline{B} \underline{4} \underline{C}$"> are each multiples of <img height="12" class="latex" alt="$3$" width="8" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png">. Which of the following could be the value of <img width="14" src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" alt="$C$" height="12" class="latex">?
+</p><p><img src="//latex.artofproblemsolving.com/5/a/a/5aa185f330d0da94ae956b3e474ffbf9e0a241c8.png" height="17" style="vertical-align: -4px" alt="$\textbf{(A) }1\qquad\textbf{(B) }2\qquad\textbf{(C) }3\qquad\textbf{(D) }5\qquad \textbf{(E) }8$" class="latex" width="353">
+</p><p><br>
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A <img alt="$2$" height="12" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" width="8" class="latex">-digit number is such that the product of the digits plus the sum of the digits is equal to the number. What is the units digit of the number?
+</p><p><img style="vertical-align: -4px" class="latex" src="//latex.artofproblemsolving.com/a/7/2/a72867f03ca7b8680eace03522f3d8c17908c41d.png" width="353" height="17" alt="$\textbf{(A) }1\qquad\textbf{(B) }3\qquad\textbf{(C) }5\qquad\textbf{(D) }7\qquad \textbf{(E) }9$">
+</p>
+<h2><span class="mw-headline" id="Video_Solution_by_OmegaLearn">Video Solution by OmegaLearn</span></h2>
+<p><a rel="nofollow" href="https://youtu.be/7an5wU9Q5hk?t=2226" class="external free">https://youtu.be/7an5wU9Q5hk?t=2226</a>
+</p>
+<h2><span class="mw-headline" id="Video_Solution_2">Video Solution 2</span></h2>
+<p><a class="external free" href="https://www.youtube.com/watch?v=RX3BxKW_wTU" rel="nofollow">https://www.youtube.com/watch?v=RX3BxKW_wTU</a>   ~David
+</p>
+<h2><span class="mw-headline" id="Video_Solution_3">Video Solution 3</span></h2>
+<p><a href="https://youtu.be/AR3Ke23N1I8" rel="nofollow" class="external free">https://youtu.be/AR3Ke23N1I8</a> ~savannahsolver
+</p>
+<h2><span class="mw-headline" id="Video_Solution_for_Problems_21-25">Video Solution for Problems 21-25</span></h2>
+<p><a href="https://www.youtube.com/watch?v=6S0u_fDjSxc" rel="nofollow" class="external free">https://www.youtube.com/watch?v=6S0u_fDjSxc</a>
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Three members of the Euclid Middle School girls' softball team had the following conversation.
+</p><p>Ashley: I just realized that our uniform numbers are all <img src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" height="12" width="8" class="latex" alt="$2$">-digit primes.
+</p><p>Brittany&nbsp;: And the sum of your two uniform numbers is the date of my birthday earlier this month.
+</p><p>Caitlin: That's funny. The sum of your two uniform numbers is the date of my birthday later this month.
+</p><p>Ashley: And the sum of your two uniform numbers is today's date.
+</p><p>What number does Caitlin wear?
+</p><p><img style="vertical-align: -4px" class="latex" alt="$\textbf{(A) }11\qquad\textbf{(B) }13\qquad\textbf{(C) }17\qquad\textbf{(D) }19\qquad \textbf{(E) }23$" src="//latex.artofproblemsolving.com/9/9/1/99165797657ca8b99f486cc6aa2e3d37ec79c74d.png" width="398" height="17">
+</p>
+<h2><span id="Video_Solution_for_Problems_21-25" class="mw-headline">Video Solution for Problems 21-25</span></h2>
+<p><a href="https://www.youtube.com/watch?v=6S0u_fDjSxc" class="external free" rel="nofollow">https://www.youtube.com/watch?v=6S0u_fDjSxc</a>
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>One day the Beverage Barn sold <img alt="$252$" src="//latex.artofproblemsolving.com/6/5/e/65e844b013cb07a4ccd130fcea1b7ab985ba0b3a.png" class="latex" width="26" height="12"> cans of soda to <img src="//latex.artofproblemsolving.com/e/5/9/e59e2c6e83eb78cca610a5fd4070ae01c8d4ae60.png" class="latex" width="26" style="vertical-align: 0px" height="13" alt="$100$"> customers, and every customer bought at least one can of soda. What is the maximum possible median number of cans of soda bought per customer on that day?
+</p><p><img alt="$\textbf{(A) }2.5\qquad\textbf{(B) }3.0\qquad\textbf{(C) }3.5\qquad\textbf{(D) }4.0\qquad \textbf{(E) }4.5$" src="//latex.artofproblemsolving.com/e/7/f/e7f46289d1bcb24b07aace1d99fe8d7fd061679b.png" style="vertical-align: -4px" class="latex" height="17" width="423">
+</p>
+<h2><span class="mw-headline" id="Video_Solution_for_Problems_21-25">Video Solution for Problems 21-25</span></h2>
+<p><a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=qMb_GCP0mbw">https://www.youtube.com/watch?v=qMb_GCP0mbw</a>
+</p>
+<h2><span id="Video_Solution" class="mw-headline">Video Solution</span></h2>
+<p><a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=FE0u3Y1FCGk">https://www.youtube.com/watch?v=FE0u3Y1FCGk</a>   ~David
+</p><p><a rel="nofollow" href="https://youtu.be/VlJzQ-ZNmmk" class="external free">https://youtu.be/VlJzQ-ZNmmk</a> ~savannahsolver
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A straight one-mile stretch of highway, 40 feet wide, is closed. Robert rides his bike on a path composed of semicircles as shown. If he rides at 5 miles per hour, how many hours will it take to cover the one-mile stretch?
+<img alt="[asy]size(10cm); pathpen=black; pointpen=black; D(arc((-2,0),1,300,360)); D(arc((0,0),1,0,180)); D(arc((2,0),1,180,360)); D(arc((4,0),1,0,180)); D(arc((6,0),1,180,240)); D((-1.5,1)--(5.5,1)); D((-1.5,0)--(5.5,0),dashed); D((-1.5,-1)--(5.5,-1));[/asy]" src="//latex.artofproblemsolving.com/e/9/c/e9c1addce3e2b6264c297a680c3bfc8f7c6f6b5b.png" height="138" width="475" class="latexcenter">
+Note: 1 mile = 5280 feet
+</p><p><img class="latex" src="//latex.artofproblemsolving.com/c/9/1/c91a475829e5cbdd00db1426252ec6730c30cd09.png" alt="$\textbf{(A) }\frac{\pi}{11}\qquad\textbf{(B) }\frac{\pi}{10}\qquad\textbf{(C) }\frac{\pi}{5}\qquad\textbf{(D) }\frac{2\pi}{5}\qquad\textbf{(E) }\frac{2\pi}{3}$" width="414" height="37" style="vertical-align: -13px">
+</p>
+<h2><span class="mw-headline" id="Video_Solution_for_Problems_21-25">Video Solution for Problems 21-25</span></h2>
+<p><a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=6S0u_fDjSxc">https://www.youtube.com/watch?v=6S0u_fDjSxc</a>
+</p>
+<h2><span id="Video_Solution" class="mw-headline">Video Solution</span></h2>
+<p><a class="external free" href="https://youtu.be/zi01koyAVhM" rel="nofollow">https://youtu.be/zi01koyAVhM</a> ~savannahsolver
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2015 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In the given figure, hexagon <img alt="$ABCDEF$" src="//latex.artofproblemsolving.com/8/0/2/8029902caf855d940e465d04ff40101d8850c3e0.png" height="13" class="latex" width="86"> is equiangular, <img height="13" src="//latex.artofproblemsolving.com/5/c/e/5ce3d9b98fd08b6b918db460ef6996476a1eaa9d.png" width="49" alt="$ABJI$" class="latex"> and <img height="12" alt="$FEHG$" class="latex" width="59" src="//latex.artofproblemsolving.com/6/a/7/6a72bac1b49d03973c6bed2abbaa2c4d6b1bf7f8.png"> are squares with areas <img width="17" height="13" src="//latex.artofproblemsolving.com/5/e/7/5e7a1b6098a8c98b8e4adae526aeef4b91712620.png" alt="$18$" class="latex" style="vertical-align: 0px"> and <img class="latex" width="17" src="//latex.artofproblemsolving.com/4/f/4/4f4b8590f8aa9f9894b3891dd5dede0e354fa04e.png" height="12" alt="$32$"> respectively, <img src="//latex.artofproblemsolving.com/2/d/4/2d45d06640b82daaec94b78987425d5a987174e0.png" alt="$\triangle JBK$" height="13" width="59" class="latex"> is equilateral and <img height="12" alt="$FE=BC$" src="//latex.artofproblemsolving.com/5/f/8/5f8083596c034ddcef85bda7f73bf184d5347a6f.png" class="latex" width="81">. What is the area of <img height="13" src="//latex.artofproblemsolving.com/3/4/c/34c637022b2d43c4bcd447a7b5b6e6efa2374c58.png" width="61" alt="$\triangle KBC$" class="latex">?
+</p><p><img src="//latex.artofproblemsolving.com/f/1/1/f11d24db37ed085cbc452224454338f8eabdfb37.png" alt="[asy] draw((-4,6*sqrt(2))--(4,6*sqrt(2))); draw((-4,-6*sqrt(2))--(4,-6*sqrt(2))); draw((-8,0)--(-4,6*sqrt(2))); draw((-8,0)--(-4,-6*sqrt(2))); draw((4,6*sqrt(2))--(8,0)); draw((8,0)--(4,-6*sqrt(2))); draw((-4,6*sqrt(2))--(4,6*sqrt(2))--(4,8+6*sqrt(2))--(-4,8+6*sqrt(2))--cycle); draw((-8,0)--(-4,-6*sqrt(2))--(-4-6*sqrt(2),-4-6*sqrt(2))--(-8-6*sqrt(2),-4)--cycle); label(&quot;$I$&quot;,(-4,8+6*sqrt(2)),dir(100)); label(&quot;$J$&quot;,(4,8+6*sqrt(2)),dir(80)); label(&quot;$A$&quot;,(-4,6*sqrt(2)),dir(280)); label(&quot;$B$&quot;,(4,6*sqrt(2)),dir(250)); label(&quot;$C$&quot;,(8,0),W); label(&quot;$D$&quot;,(4,-6*sqrt(2)),NW); label(&quot;$E$&quot;,(-4,-6*sqrt(2)),NE); label(&quot;$F$&quot;,(-8,0),E); draw((4,8+6*sqrt(2))--(4,6*sqrt(2))--(4+4*sqrt(3),4+6*sqrt(2))--cycle); label(&quot;$K$&quot;,(4+4*sqrt(3),4+6*sqrt(2)),E); draw((4+4*sqrt(3),4+6*sqrt(2))--(8,0),dashed); label(&quot;$H$&quot;,(-4-6*sqrt(2),-4-6*sqrt(2)),S); label(&quot;$G$&quot;,(-8-6*sqrt(2),-4),W); label(&quot;$32$&quot;,(-10,-8),N); label(&quot;$18$&quot;,(0,6*sqrt(2)+2),N); [/asy]" width="248" class="latexcenter" height="252">
+</p><p><img class="latex" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/1/7/0/170cb44da82efb71737f6300601d2ddb2ac930fc.png" height="21" width="353" alt="$\textbf{(A) }6\sqrt{2}\quad\textbf{(B) }9\quad\textbf{(C) }12\quad\textbf{(D) }9\sqrt{2}\quad\textbf{(E) }32$">.
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>On June 1, a group of students is standing in rows, with 15 students in each row. On June 2, the same group is standing with all of the students in one long row. On June 3, the same group is standing with just one student in each row. On June 4, the same group is standing with 6 students in each row. This process continues through June 12 with a different number of students per row each day. However, on June 13, they cannot find a new way of organizing the students. What is the smallest possible number of students in the group?
+</p><p><img src="//latex.artofproblemsolving.com/8/0/4/80467f03ddb1bfdc10656f73dbdd71c3dde242f4.png" style="vertical-align: -4px" height="17" alt="$\textbf{(A) } 21 \qquad \textbf{(B) } 30 \qquad \textbf{(C) } 60 \qquad \textbf{(D) } 90 \qquad \textbf{(E) } 1080$" class="latex" width="416">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Tom has twelve slips of paper which he wants to put into five cups labeled <img width="13" alt="$A$" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" height="13" class="latex">, <img src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" height="12" width="14" class="latex" alt="$B$">, <img src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" class="latex" height="12" alt="$C$" width="14">, <img src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" width="15" class="latex" height="12" alt="$D$">, <img width="14" alt="$E$" height="12" class="latex" src="//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png">. He wants the sum of the numbers on the slips in each cup to be an integer. Furthermore, he wants the five integers to be consecutive and increasing from <img width="13" class="latex" alt="$A$" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" height="13"> to <img alt="$E$" class="latex" width="14" height="12" src="//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png">. The numbers on the papers are <img alt="$2, 2, 2, 2.5, 2.5, 3, 3, 3, 3, 3.5, 4,$" class="latex" style="vertical-align: -3px" src="//latex.artofproblemsolving.com/f/3/4/f3407f99083b60a7d8cd5bd4dbfb553cca5bbfd6.png" width="227" height="16"> and <img alt="$4.5$" style="vertical-align: 0px" height="13" width="22" src="//latex.artofproblemsolving.com/0/f/b/0fbe18900c777778ad24c84cb3d99df7032b4fd3.png" class="latex">. If a slip with <img height="12" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" width="8" class="latex" alt="$2$"> goes into cup <img src="//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png" width="14" height="12" alt="$E$" class="latex"> and a slip with <img width="8" alt="$3$" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" class="latex" height="12"> goes into cup <img src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" width="14" alt="$B$" height="12" class="latex">, then the slip with <img height="12" class="latex" alt="$3.5$" width="22" src="//latex.artofproblemsolving.com/8/7/b/87b8245e043508c7c928c89b42f9ce38f04d720d.png"> must go into what cup?
+</p><p><img class="latex" alt="$\textbf{(A) } A \qquad \textbf{(B) } B \qquad \textbf{(C) } C \qquad \textbf{(D) } D \qquad \textbf{(E) } E$" src="//latex.artofproblemsolving.com/0/2/5/025f68af2f90d96e9d98e1f6924121ba40362c33.png" style="vertical-align: -4px" height="17" width="380">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A baseball league consists of two four-team divisions. Each team plays every other team in its division <img height="12" alt="$N$" class="latex" width="16" src="//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png"> games. Each team plays every team in the other division <img width="19" height="12" src="//latex.artofproblemsolving.com/5/d/1/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png" class="latex" alt="$M$"> games with <img height="13" width="69" style="vertical-align: 0px" class="latex" src="//latex.artofproblemsolving.com/5/3/4/5345bc78b6305a1f3eff93f78a2b79fe6a1383fe.png" alt="$N>2M$"> and <img width="53" alt="$M>4$" class="latex" style="vertical-align: 0px" src="//latex.artofproblemsolving.com/7/c/7/7c7ed5ca66dffaf99ec55e0b4ed27afc720b7c39.png" height="13">. Each team plays a <img class="latex" alt="$76$" width="17" height="12" src="//latex.artofproblemsolving.com/1/d/5/1d5db6ea360f9b1367e4db85c18474906401e2c0.png"> game schedule. How many games does a team play within its own division?
+</p><p><img class="latex" style="vertical-align: -4px" alt="$\textbf{(A) } 36 \qquad \textbf{(B) } 48 \qquad \textbf{(C) } 54 \qquad \textbf{(D) } 60 \qquad \textbf{(E) } 72$" src="//latex.artofproblemsolving.com/8/4/a/84a2560f0c21e189238d52a3a7f81fff552b2689.png" height="17" width="398">
+</p>
+<h2><span id="Solutions" class="mw-headline">Solutions</span></h2>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>One-inch squares are cut from the corners of this 5 inch square.  What is the area in square inches of the largest square that can be fitted into the remaining space?
+</p><p><img class="latexcenter" src="//latex.artofproblemsolving.com/1/6/9/16905c0611e83380a7ff4045538ffe74a49c7cb7.png" alt="[asy] size(75); draw((0,0)--(0,5)--(5,5)--(5,0)--cycle); filldraw((0,4)--(1,4)--(1,5)--(0,5)--cycle, gray); filldraw((0,0)--(1,0)--(1,1)--(0,1)--cycle, gray); filldraw((4,0)--(4,1)--(5,1)--(5,0)--cycle, gray); filldraw((4,4)--(4,5)--(5,5)--(5,4)--cycle, gray); [/asy]" width="125" height="125">
+</p><p><img class="latex" width="415" src="//latex.artofproblemsolving.com/a/5/0/a50665010dfc0abf15aacdb80a728fb3e41e28cd.png" style="vertical-align: -12px" height="37" alt="$\textbf{(A)  } 9\qquad \textbf{(B)  } 12\frac{1}{2}\qquad \textbf{(C)  } 15\qquad \textbf{(D)  } 15\frac{1}{2}\qquad \textbf{(E)  } 17$">
+</p><p><br>
+</p>
+<h2><span class="mw-headline" id="Solutions">Solutions</span></h2>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2016 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A top hat contains 3 red chips and 2 green chips. Chips are drawn randomly, one at a time without replacement, until all 3 of the reds are drawn or until both green chips are drawn. What is the probability that the 3 reds are drawn?
+</p><p><img style="vertical-align: -13px" class="latex" alt="$\textbf{(A) }\dfrac{3}{10}\qquad\textbf{(B) }\dfrac{2}{5}\qquad\textbf{(C) }\dfrac{1}{2}\qquad\textbf{(D) }\dfrac{3}{5}\qquad \textbf{(E) }\dfrac{7}{10}$" height="38" src="//latex.artofproblemsolving.com/8/f/8/8f8c6a776ae347cfbcfc0924ac0561c4aa9643aa.png" width="390">
+</p>
+<h2><span class="mw-headline" id="Solutions">Solutions</span></h2>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Rectangle <img width="57" src="//latex.artofproblemsolving.com/1/4/c/14cd7a0d5d5904e60c0858f06a78647d7cd6c755.png" height="13" alt="$DEFA$" class="latex"> below is a <img src="//latex.artofproblemsolving.com/9/f/3/9f3f04882ae10c114ebe301c72ee68990d97c48e.png" style="vertical-align: 0px" alt="$3 \times 4$" class="latex" width="40" height="13"> rectangle with <img alt="$DC=CB=BA=1$" style="vertical-align: 0px" height="13" src="//latex.artofproblemsolving.com/3/e/7/3e71e61964d5de3a9893dc50c43ad6285be4bbbc.png" width="168" class="latex">. The area of the "bat wings" (shaded area) is
+</p><p><img width="198" src="//latex.artofproblemsolving.com/a/0/7/a07a9e12af7228a9f783f34687384df0042b721e.png" height="252" class="latexcenter" alt="[asy] draw((0,0)--(3,0)--(3,4)--(0,4)--(0,0)--(2,4)--(3,0)); draw((3,0)--(1,4)--(0,0)); fill((0,0)--(1,4)--(1.5,3)--cycle, black); fill((3,0)--(2,4)--(1.5,3)--cycle, black); label(&quot;$A$&quot;,(3.05,4.2)); label(&quot;$B$&quot;,(2,4.2)); label(&quot;$C$&quot;,(1,4.2)); label(&quot;$D$&quot;,(0,4.2)); label(&quot;$E$&quot;, (0,-0.2)); label(&quot;$F$&quot;, (3,-0.2)); label(&quot;$1$&quot;, (0.5, 4), N); label(&quot;$1$&quot;, (1.5, 4), N); label(&quot;$1$&quot;, (2.5, 4), N); label(&quot;$4$&quot;, (3.2, 2), E); [/asy]">
+</p><p><img src="//latex.artofproblemsolving.com/1/b/0/1b01033286bc7dadbc18039b609ef75d32c89e34.png" class="latex" width="379" style="vertical-align: -12px" alt="$\textbf{(A) }2\qquad\textbf{(B) }2 \frac{1}{2}\qquad\textbf{(C) }3\qquad\textbf{(D) }3 \frac{1}{2}\qquad \textbf{(E) }5$" height="37">
+</p><p><br>
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Two congruent circles centered at points <img class="latex" height="13" alt="$A$" width="13" src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png"> and <img alt="$B$" height="12" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" class="latex" width="14"> each pass through the other circle's center. The line containing both <img src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" width="13" class="latex" height="13" alt="$A$"> and <img height="12" class="latex" width="14" alt="$B$" src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png"> is extended to intersect the circles at points <img class="latex" width="14" alt="$C$" height="12" src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png"> and <img height="12" class="latex" width="15" src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="$D$">. The circles intersect at two points, one of which is <img src="//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png" class="latex" height="12" alt="$E$" width="14">. What is the degree measure of <img alt="$\angle CED$" src="//latex.artofproblemsolving.com/2/e/8/2e8dd80cb1927f03ef77da74c59e77acf710c815.png" height="12" class="latex" width="56">?
+</p><p><img width="434" alt="$\textbf{(A) }90\qquad\textbf{(B) }105\qquad\textbf{(C) }120\qquad\textbf{(D) }135\qquad \textbf{(E) }150$" style="vertical-align: -4px" height="17" class="latex" src="//latex.artofproblemsolving.com/2/2/c/22cd69b203c6c24cfd48aad4ad34fb33642c26c0.png">
+</p>
+<h2><span class="mw-headline" id="Solutions">Solutions</span></h2>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>The digits <img class="latex" style="vertical-align: 0px" src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" width="8" height="12" alt="$1$">, <img width="8" class="latex" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" height="12" alt="$2$">, <img height="12" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="$3$" class="latex" width="8">, <img style="vertical-align: 0px" class="latex" src="//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png" width="9" alt="$4$" height="12">, and <img class="latex" width="8" alt="$5$" src="//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png" height="12"> are each used once to write a five-digit number <img src="//latex.artofproblemsolving.com/a/9/6/a9699fad1383356458f8788a747ad2eb8af4e4d2.png" height="16" style="vertical-align: -3px" class="latex" width="67" alt="$PQRST$">. The three-digit number <img style="vertical-align: -3px" height="16" width="42" src="//latex.artofproblemsolving.com/9/1/c/91c587b0c1e5de0bde79b9d8c36913c16dee04d9.png" alt="$PQR$" class="latex"> is divisible by <img src="//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png" width="9" height="12" alt="$4$" style="vertical-align: 0px" class="latex">, the three-digit number <img width="40" alt="$QRS$" style="vertical-align: -3px" src="//latex.artofproblemsolving.com/d/d/c/ddc0d690868e31082e37790552b4480943852bf7.png" class="latex" height="16"> is divisible by <img class="latex" src="//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png" alt="$5$" width="8" height="12">, and the three-digit number <img class="latex" alt="$RST$" width="39" height="12" src="//latex.artofproblemsolving.com/3/6/c/36c2b085f62d24672ea7cf85dc02f576e044325a.png"> is divisible by <img width="8" height="12" alt="$3$" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" class="latex">. What is <img src="//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" width="14" height="12" class="latex" alt="$P$">?
+</p><p><img class="latex" width="353" style="vertical-align: -4px" height="17" alt="$\textbf{(A) }1\qquad\textbf{(B) }2\qquad\textbf{(C) }3\qquad\textbf{(D) }4\qquad \textbf{(E) }5$" src="//latex.artofproblemsolving.com/8/1/a/81ae80de7f9538288c8a0b1d370a58d968bd059d.png">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A semicircle is inscribed in an isosceles triangle with base <img src="//latex.artofproblemsolving.com/9/a/5/9a5b4928c8fe50ce3c2428da3bee3505e891b788.png" class="latex" height="13" style="vertical-align: 0px" alt="$16$" width="17"> and height <img height="13" width="17" src="//latex.artofproblemsolving.com/f/1/9/f1965fae079a9ba2c0726c307070c2355dfcb213.png" style="vertical-align: 0px" class="latex" alt="$15$"> so that the diameter of the semicircle is contained in the base of the triangle as shown. What is the radius of the semicircle?
+</p><p><img alt="[asy]draw((0,0)--(8,15)--(16,0)--(0,0)); draw(arc((8,0),7.0588,0,180));[/asy]" class="latexcenter" width="252" height="235" src="//latex.artofproblemsolving.com/5/8/5/585fca3c7a910c5787429738a441c0c2accc394d.png">
+</p><p><img style="vertical-align: -13px" class="latex" width="475" height="41" alt="$\textbf{(A) }4 \sqrt{3}\qquad\textbf{(B) } \dfrac{120}{17}\qquad\textbf{(C) }10\qquad\textbf{(D) }\dfrac{17\sqrt{2}}{2}\qquad \textbf{(E)} \dfrac{17\sqrt{3}}{2}$" src="//latex.artofproblemsolving.com/d/5/7/d57fab58cfabccf0683673697d70c0de09ad9fc6.png">
+</p>
+<h2><span id="Note" class="mw-headline">Note</span></h2>
+<p>There are many solutions here, and all of them are equally good. For your own benefit, look at all of the solutions, as they employ many unique techniques to get to the final answer.
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2017 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Suppose <img width="9" src="//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png" class="latex" height="8" alt="$a$">, <img width="8" class="latex" alt="$b$" height="12" src="//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png">, and <img class="latex" src="//latex.artofproblemsolving.com/3/3/7/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png" width="8" height="8" alt="$c$"> are nonzero real numbers, and <img style="vertical-align: -1px" class="latex" src="//latex.artofproblemsolving.com/3/7/e/37e4c3e85710cff4f69bfec2adaff5ea38111a3a.png" alt="$a+b+c=0$" width="102" height="14">. What are the possible value(s) for <img width="171" height="42" src="//latex.artofproblemsolving.com/9/7/a/97a70ab5a90cfa9e6388311d8064e2ef1a48add4.png" alt="$\frac{a}{|a|}+\frac{b}{|b|}+\frac{c}{|c|}+\frac{abc}{|abc|}$" class="latex" style="vertical-align: -17px">?
+</p><p><img src="//latex.artofproblemsolving.com/2/c/d/2cd19574856bd1546796ff7fc4908579882c7d2b.png" width="656" class="latex" alt="$\text{(A) }0\qquad\text{(B) }1\text{ and }-1\qquad\text{(C) }2\text{ and }-2\qquad\text{(D) }0,2,\text{ and }-2\qquad\text{(E) }0,1,\text{ and }-1$" style="vertical-align: -4px" height="17">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In the right triangle <img width="42" class="latex" height="13" src="//latex.artofproblemsolving.com/e/2/a/e2a559986ed5a0ffc5654bd367c29dfc92913c36.png" alt="$ABC$">, <img class="latex" src="//latex.artofproblemsolving.com/b/b/8/bb890e788c451fed032c8b221192c5ac43790206.png" width="69" height="13" style="vertical-align: 0px" alt="$AC=12$">, <img height="12" src="//latex.artofproblemsolving.com/6/e/1/6e156331c13aae7e86644da6fa391b4389b826d9.png" width="61" class="latex" alt="$BC=5$">, and angle <img class="latex" alt="$C$" src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" width="14" height="12"> is a right angle. A semicircle is inscribed in the triangle as shown. What is the radius of the semicircle?
+</p><p><img width="252" class="latexcenter" src="//latex.artofproblemsolving.com/1/7/f/17f66d4cef8b689eb626ec8c226380e1e72d8719.png" alt="[asy] draw((0,0)--(12,0)--(12,5)--(0,0)); draw(arc((8.67,0),(12,0),(5.33,0))); label(&quot;$A$&quot;, (0,0), W); label(&quot;$C$&quot;, (12,0), E); label(&quot;$B$&quot;, (12,5), NE); label(&quot;$12$&quot;, (6, 0), S); label(&quot;$5$&quot;, (12, 2.5), E);[/asy]" height="128">
+</p><p><img height="38" src="//latex.artofproblemsolving.com/e/b/6/eb6d82ac6e498c66fb6dae70f36f57315639d4e1.png" alt="$\textbf{(A) }\frac{7}{6}\qquad\textbf{(B) }\frac{13}{5}\qquad\textbf{(C) }\frac{59}{18}\qquad\textbf{(D) }\frac{10}{3}\qquad\textbf{(E) }\frac{60}{13}$" style="vertical-align: -13px" class="latex" width="408">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Each day for four days, Linda traveled for one hour at a speed that resulted in her traveling one mile in an integer number of minutes. Each day after the first, her speed decreased so that the number of minutes to travel one mile increased by <img width="8" src="//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png" height="12" alt="$5$" class="latex"> minutes over the preceding day. Each of the four days, her distance traveled was also an integer number of miles. What was the total number of miles for the four trips?
+</p><p><img src="//latex.artofproblemsolving.com/8/d/0/8d0da014ca9ce4112e5e38f9620cd7d2a48da152.png" class="latex" alt="$\textbf{(A) }10\qquad\textbf{(B) }15\qquad\textbf{(C) }25\qquad\textbf{(D) }50\qquad\textbf{(E) }82$" height="17" style="vertical-align: -4px" width="398">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Mrs. Sanders has three grandchildren, who call her regularly. One calls her every three days, one calls her every four days, and one calls her every five days. All three called her on December 31, 2016. On how many days during the next year did she not receive a phone call from any of her grandchildren?
+</p><p><img alt="$\textbf{(A) }78\qquad\textbf{(B) }80\qquad\textbf{(C) }144\qquad\textbf{(D) }146\qquad\textbf{(E) }152$" src="//latex.artofproblemsolving.com/7/4/8/74883a8ce9cd2327e8e9da3e588087541db5d344.png" style="vertical-align: -4px" class="latex" width="425" height="17">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In the figure shown, <img class="latex" alt="$\overline{US}$" width="27" height="15" src="//latex.artofproblemsolving.com/3/d/9/3d974eb683b47d1366b693fddb030a10883baab3.png"> and <img alt="$\overline{UT}$" height="15" width="28" src="//latex.artofproblemsolving.com/8/1/2/812add04a9e574ccec9e3f394824d9631f681d2c.png" class="latex"> are line segments each of length 2, and <img src="//latex.artofproblemsolving.com/f/1/f/f1f522c2df8080b873add8c4353d3668edf44511.png" height="13" class="latex" width="117" alt="$m\angle TUS = 60^\circ$">. Arcs <img src="//latex.artofproblemsolving.com/c/d/0/cd09aa5739ca65c2115f724c936649b4268d6991.png" style="vertical-align: 0px" height="20" alt="$\overarc{TR}$" class="latex" width="24"> and <img width="21" src="//latex.artofproblemsolving.com/d/2/3/d237b092cf9eb34662775f7d55c939058cd361af.png" class="latex" style="vertical-align: 0px" height="20" alt="$\overarc{SR}$"> are each one-sixth of a circle with radius 2. What is the area of the region shown?
+</p><p><img height="252" width="165" class="latexcenter" src="//latex.artofproblemsolving.com/7/9/f/79f3ffcfa12364f64959c7aeadc809ba8d2aa6ac.png" alt="[asy]draw((1,1.732)--(2,3.464)--(3,1.732)); draw(arc((0,0),(2,0),(1,1.732))); draw(arc((4,0),(3,1.732),(2,0))); label(&quot;$U$&quot;, (2,3.464), N); label(&quot;$S$&quot;, (1,1.732), W); label(&quot;$T$&quot;, (3,1.732), E); label(&quot;$R$&quot;, (2,0), S);[/asy]">
+</p><p><img class="latex" height="37" width="621" alt="$\textbf{(A) }3\sqrt{3}-\pi\qquad\textbf{(B) }4\sqrt{3}-\frac{4\pi}{3}\qquad\textbf{(C) }2\sqrt{3}\qquad\textbf{(D) }4\sqrt{3}-\frac{2\pi}{3}\qquad\textbf{(E) }4+\frac{4\pi}{3}$" style="vertical-align: -12px" src="//latex.artofproblemsolving.com/1/b/a/1ba4c62eb0f4905624dbdce926328ebe34a4609e.png">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2018 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>How many positive three-digit integers have a remainder of 2 when divided by 6, a remainder of 5 when divided by 9, and a remainder of 7 when divided by 11?
+</p><p><img src="//latex.artofproblemsolving.com/8/1/a/81ae80de7f9538288c8a0b1d370a58d968bd059d.png" style="vertical-align: -4px" height="17" alt="$\textbf{(A) }1\qquad\textbf{(B) }2\qquad\textbf{(C) }3\qquad\textbf{(D) }4\qquad \textbf{(E) }5$" width="353" class="latex">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Point <img src="//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png" alt="$E$" class="latex" width="14" height="12"> is the midpoint of side <img src="//latex.artofproblemsolving.com/c/e/0/ce0bfc603f9a044e308b1a1fdadca917e81ad2dd.png" class="latex" width="32" alt="$\overline{CD}$" height="18" style="vertical-align: -1px"> in square <img class="latex" alt="$ABCD,$" width="62" height="16" style="vertical-align: -3px" src="//latex.artofproblemsolving.com/4/2/5/42501e1c7100f340da9bd452bf942219ac6b131b.png"> and <img class="latex" width="29" height="15" alt="$\overline{BE}$" src="//latex.artofproblemsolving.com/0/f/3/0f32db217d7630882c3441fa8821cd70a6958c3a.png"> meets diagonal <img class="latex" height="15" alt="$\overline{AC}$" src="//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png" width="28"> at <img alt="$F.$" class="latex" height="12" src="//latex.artofproblemsolving.com/f/2/9/f2920fa2bc40ed68149a854f8b32c09f619b0d70.png" width="15"> The area of quadrilateral <img class="latex" src="//latex.artofproblemsolving.com/5/f/2/5f26e85ac9c958d93ff103a7c6045f2c98590081.png" width="57" alt="$AFED$" height="13"> is <img src="//latex.artofproblemsolving.com/8/e/4/8e4fb04c23eb42578853b800dd28ad7b3d947fd8.png" class="latex" alt="$45.$" height="13" width="21" style="vertical-align: 0px"> What is the area of <img height="13" class="latex" alt="$ABCD?$" width="66" src="//latex.artofproblemsolving.com/d/6/4/d64633b1612a0801fc7f0316fdbdf0adf1f2d70d.png">
+</p><p><img alt="[asy] size(5cm); draw((0,0)--(6,0)--(6,6)--(0,6)--cycle); draw((0,6)--(6,0)); draw((3,0)--(6,6)); label(&quot;$A$&quot;,(0,6),NW); label(&quot;$B$&quot;,(6,6),NE); label(&quot;$C$&quot;,(6,0),SE); label(&quot;$D$&quot;,(0,0),SW); label(&quot;$E$&quot;,(3,0),S); label(&quot;$F$&quot;,(4,2),E); [/asy]" height="235" class="latexcenter" width="238" src="//latex.artofproblemsolving.com/7/c/1/7c13c3d233bfe4e1b9a7ecd2e6343fe5b8aa2e3a.png">
+</p><p><img height="17" alt="$\textbf{(A) } 100 \qquad \textbf{(B) } 108 \qquad \textbf{(C) } 120 \qquad \textbf{(D) } 135 \qquad \textbf{(E) } 144$" src="//latex.artofproblemsolving.com/b/a/e/bae036638e9efe35121779d67ecf1c469583698a.png" style="vertical-align: -4px" class="latex" width="444">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>From a regular octagon, a triangle is formed by connecting three randomly chosen vertices of the octagon. What is the probability that at least one of the sides of the triangle is also a side of the octagon?
+</p><p><img height="145" class="latexcenter" width="145" alt="[asy] size(3cm); pair A[]; for (int i=0; i<9; ++i) {   A[i] = rotate(22.5+45*i)*(1,0); } filldraw(A[0]--A[1]--A[2]--A[3]--A[4]--A[5]--A[6]--A[7]--cycle,gray,black); for (int i=0; i<8; ++i) { dot(A[i]); } [/asy]" src="//latex.artofproblemsolving.com/5/4/d/54d911c096b9c5403a914f8b8c2b05b4915494f1.png">
+</p><p><br>
+<img height="38" class="latex" style="vertical-align: -13px" src="//latex.artofproblemsolving.com/5/d/0/5d0b3c02aafe778f2d092bd57c8ba8ce04ef7bd6.png" alt="$\textbf{(A) } \frac{2}{7} \qquad \textbf{(B) } \frac{5}{42} \qquad \textbf{(C) } \frac{11}{14} \qquad \textbf{(D) } \frac{5}{7} \qquad \textbf{(E) } \frac{6}{7}$" width="390">
+</p>
+<h2><span id="Solutions" class="mw-headline">Solutions</span></h2>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In the cube <img src="//latex.artofproblemsolving.com/0/5/5/055dcba798b1424c44c2606d913e0f2edab1c5ad.png" height="13" alt="$ABCDEFGH$" width="118" class="latex"> with opposite vertices <img src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" width="14" alt="$C$" height="12" class="latex"> and <img style="vertical-align: -3px" src="//latex.artofproblemsolving.com/a/0/a/a0a1dbdebe8f3df1befc34f5862f69364b3c11b6.png" class="latex" alt="$E,$" width="18" height="16"> <img alt="$J$" src="//latex.artofproblemsolving.com/a/b/b/abb5588023cfa1ac14643e9778699f03eecc57a3.png" height="12" width="12" class="latex"> and <img class="latex" width="9" alt="$I$" height="12" src="//latex.artofproblemsolving.com/0/2/7/027f4a11d6090f9eac0ce2488df6384dad1263ea.png"> are the midpoints of segments <img height="15" width="29" alt="$\overline{FB}$" class="latex" src="//latex.artofproblemsolving.com/a/5/6/a56a5efb54b46587c420e1101dc0ef393707a28d.png"> and <img height="19" style="vertical-align: -3px" alt="$\overline{HD},$" src="//latex.artofproblemsolving.com/3/6/e/36e9272274bfd904964bafae7af78651bad5b540.png" width="36" class="latex"> respectively. Let <img width="14" alt="$R$" src="//latex.artofproblemsolving.com/e/f/f/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" class="latex" height="12"> be the ratio of the area of the cross-section <img height="12" width="50" class="latex" src="//latex.artofproblemsolving.com/7/8/e/78ebd359b76a6a2b4da1a3027adc808e24a0277f.png" alt="$EJCI$"> to the area of one of the faces of the cube. What is <img class="latex" alt="$R^2?$" height="15" width="29" src="//latex.artofproblemsolving.com/4/1/9/41997da7bd47b28d5c0d22ebb5a00374e566592e.png">
+</p><p><img src="//latex.artofproblemsolving.com/a/1/d/a1d819cf8339fd4ae7e3d612b459da3b1e8cdc7b.png" width="258" class="latexcenter" alt="[asy] size(6cm); pair A,B,C,D,EE,F,G,H,I,J; C = (0,0); B = (-1,1); D = (2,0.5); A = B+D; G = (0,2); F = B+G; H = G+D; EE = G+B+D; I = (D+H)/2; J = (B+F)/2; filldraw(C--I--EE--J--cycle,lightgray,black); draw(C--D--H--EE--F--B--cycle);  draw(G--F--G--C--G--H); draw(A--B,dashed); draw(A--EE,dashed); draw(A--D,dashed); dot(A); dot(B); dot(C); dot(D); dot(EE); dot(F); dot(G); dot(H); dot(I); dot(J); label(&quot;$A$&quot;,A,E); label(&quot;$B$&quot;,B,W); label(&quot;$C$&quot;,C,S); label(&quot;$D$&quot;,D,E); label(&quot;$E$&quot;,EE,N); label(&quot;$F$&quot;,F,W); label(&quot;$G$&quot;,G,N); label(&quot;$H$&quot;,H,E); label(&quot;$I$&quot;,I,E); label(&quot;$J$&quot;,J,W); [/asy]" height="285">
+</p><p><img src="//latex.artofproblemsolving.com/3/6/a/36ad9b5b5b4e15be1bbefa7c0bfe63f953ec318a.png" alt="$\textbf{(A) } \frac{5}{4} \qquad \textbf{(B) } \frac{4}{3} \qquad \textbf{(C) } \frac{3}{2} \qquad \textbf{(D) } \frac{25}{16} \qquad \textbf{(E) } \frac{9}{4}$" class="latex" width="381" style="vertical-align: -13px" height="38">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>How many perfect cubes lie between <img alt="$2^8+1$" style="vertical-align: -1px" height="16" class="latex" src="//latex.artofproblemsolving.com/4/9/c/49cea34049701bdb4c97030c930e5aa595efae73.png" width="47"> and <img src="//latex.artofproblemsolving.com/3/9/9/3994249398f2b6f10f73d45b6db7cc4e6e3aac18.png" height="16" alt="$2^{18}+1$" width="53" style="vertical-align: -1px" class="latex">, inclusive?
+</p><p><img height="17" src="//latex.artofproblemsolving.com/9/8/3/98353645442445ce5c70fff9ccbbda0ee47ea338.png" class="latex" alt="$\textbf{(A) }4\qquad\textbf{(B) }9\qquad\textbf{(C) }10\qquad\textbf{(D) }57\qquad \textbf{(E) }58$" style="vertical-align: -4px" width="380">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2019 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>What is the area of the triangle formed by the lines <img style="vertical-align: -3px" width="42" class="latex" alt="$y=5$" height="16" src="//latex.artofproblemsolving.com/e/c/d/ecd049e624a41c0df950b22dadf2257ee2ad9410.png">, <img width="75" alt="$y=1+x$" style="vertical-align: -3px" class="latex" height="15" src="//latex.artofproblemsolving.com/e/9/4/e944b3b1bd934694013ebc59154204431c62dbc5.png">, and <img width="75" src="//latex.artofproblemsolving.com/b/7/0/b70ffce4cf1a0c80b224fec4a198b2cc55f46ddd.png" alt="$y=1-x$" class="latex" style="vertical-align: -3px" height="15">?
+</p><p><img height="17" width="380" class="latex" src="//latex.artofproblemsolving.com/7/7/8/778508c4cd5a6d187ee285ee0c300a9d7f77576d.png" alt="$\textbf{(A) }4\qquad\textbf{(B) }8\qquad\textbf{(C) }10\qquad\textbf{(D) }12\qquad\textbf{(E) }16$" style="vertical-align: -4px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A store increased the original price of a shirt by a certain percent and then lowered the new price by the same amount. Given that the resulting price was <img class="latex" alt="$84\%$" height="14" width="32" src="//latex.artofproblemsolving.com/6/f/c/6fceca304ecdebbd0bcdbf2c1c7a312dd8a24465.png" style="vertical-align: -1px"> of the original price, by what percent was the price increased and decreased<img src="//latex.artofproblemsolving.com/4/a/8/4a8960d40d67144344fa86ca431cc1d6491690c5.png" alt="$?$" width="8" class="latex" height="12">
+</p><p><img height="17" alt="$\textbf{(A) }16\qquad\textbf{(B) }20\qquad\textbf{(C) }28\qquad\textbf{(D) }36\qquad\textbf{(E) }40$" class="latex" style="vertical-align: -4px" width="398" src="//latex.artofproblemsolving.com/5/6/c/56c1e0e981858634838534232fc85f65c0051489.png">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>After Euclid High School's last basketball game, it was determined that <img style="vertical-align: -13px" height="37" class="latex" alt="$\frac{1}{4}$" width="11" src="//latex.artofproblemsolving.com/c/3/3/c339afa03e060d959e4942be7522c0c992f4c41c.png"> of the team's points were scored by Alexa and <img style="vertical-align: -12px" width="11" src="//latex.artofproblemsolving.com/7/2/6/726bdcb0779fcb4723bfc790d0f677a9981261a6.png" height="37" class="latex" alt="$\frac{2}{7}$"> were scored by Brittany. Chelsea scored <img class="latex" height="13" src="//latex.artofproblemsolving.com/f/1/9/f1965fae079a9ba2c0726c307070c2355dfcb213.png" alt="$15$" style="vertical-align: 0px" width="17"> points. None of the other <img class="latex" alt="$7$" width="9" src="//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png" height="12"> team members scored more than <img alt="$2$" height="12" class="latex" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" width="8"> points. What was the total number of points scored by the other <img width="9" height="12" alt="$7$" src="//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png" class="latex"> team members?
+</p><p><img alt="$\textbf{(A) }10\qquad\textbf{(B) }11\qquad\textbf{(C) }12\qquad\textbf{(D) }13\qquad\textbf{(E) }14$" style="vertical-align: -4px" width="398" class="latex" height="17" src="//latex.artofproblemsolving.com/7/4/4/744deec89cb020a27de934a7e1affe73f8cfb1d6.png">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In triangle <img alt="$\triangle ABC$" class="latex" src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" height="13" width="58">, point <img height="12" width="15" class="latex" src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="$D$"> divides side <img src="//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png" width="28" class="latex" alt="$\overline{AC}$" height="15"> so that <img style="vertical-align: 0px" width="131" alt="$AD:DC=1:2$" src="//latex.artofproblemsolving.com/0/4/d/04d53dba7359d997a0a26c9a84238618a4e8cdab.png" class="latex" height="13">. Let <img height="12" alt="$E$" src="//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png" width="14" class="latex"> be the midpoint of <img src="//latex.artofproblemsolving.com/4/3/7/4373e7b4be983c0315e82e1fda1df66ed34dd7fb.png" width="30" alt="$\overline{BD}$" height="15" class="latex"> and let <img class="latex" alt="$F$" width="14" src="//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" height="12"> be the point of intersection of line  <img class="latex" height="15" src="//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png" alt="$\overline{BC}$" width="29"> and line <img alt="$\overline{AE}$" width="28" class="latex" src="//latex.artofproblemsolving.com/5/e/8/5e8bc36793a7c64d05fff20d519f0f72d9256fab.png" height="15">. Given that the area of <img height="13" alt="$\triangle ABC$" src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" class="latex" width="58"> is <img alt="$360$" height="12" class="latex" src="//latex.artofproblemsolving.com/c/6/2/c62a47cbc153efdf4611d8660429ea879be3f192.png" width="26">, what is the area of <img height="13" alt="$\triangle EBF$" src="//latex.artofproblemsolving.com/d/9/1/d919422f1794888aa88074dfa41a76c825420e2f.png" class="latex" width="59">?
+</p><p><img class="latexcenter" alt="[asy] unitsize(2cm); pair A,B,C,DD,EE,FF; B = (0,0); C = (3,0);  A = (1.2,1.7); DD = (2/3)*A+(1/3)*C; EE = (B+DD)/2; FF = intersectionpoint(B--C,A--A+2*(EE-A)); draw(A--B--C--cycle); draw(A--FF);  draw(B--DD);dot(A);  label(&quot;$A$&quot;,A,N); dot(B);  label(&quot;$B$&quot;, B,SW);dot(C);  label(&quot;$C$&quot;,C,SE); dot(DD);  label(&quot;$D$&quot;,DD,NE); dot(EE);  label(&quot;$E$&quot;,EE,NW); dot(FF);  label(&quot;$F$&quot;,FF,S); [/asy]" src="//latex.artofproblemsolving.com/c/f/5/cf5d315e13b9e158a6df354d7f9a8ecafaf2b131.png" width="328" height="205">
+</p><p><br>
+<img alt="$\textbf{(A) }24\qquad\textbf{(B) }30\qquad\textbf{(C) }32\qquad\textbf{(D) }36\qquad\textbf{(E) }40$" height="17" class="latex" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/b/5/7/b57926df483ef6d4bb5bb0b6c3d9f40c8a1f5bde.png" width="398">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Alice has <img src="//latex.artofproblemsolving.com/e/2/9/e290f2cba0ba0e11c0b91630da15a408da2fcf1c.png" alt="$24$" height="12" style="vertical-align: 0px" width="18" class="latex"> apples. In how many ways can she share them with Becky and Chris so that each of the three people has at least two apples?
+<img src="//latex.artofproblemsolving.com/a/1/f/a1f674a94c55b7adefc9ab461976d82b4384104d.png" alt="$\textbf{(A) }105\qquad\textbf{(B) }114\qquad\textbf{(C) }190\qquad\textbf{(D) }210\qquad\textbf{(E) }380$" style="vertical-align: -4px" class="latex" width="443" height="17">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2020 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A game board consists of <img height="13" src="//latex.artofproblemsolving.com/0/5/e/05e228ac5bee7b9ffb60cacf50f3f2c7c31f8038.png" alt="$64$" style="vertical-align: 0px" width="18" class="latex"> squares that alternate in color between black and white. The figure below shows square <img width="14" class="latex" alt="$P$" src="//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" height="12"> in the bottom row and square <img src="//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png" width="13" style="vertical-align: -3px" class="latex" height="16" alt="$Q$"> in the top row. A marker is placed at <img height="12" alt="$P.$" src="//latex.artofproblemsolving.com/e/3/c/e3ce33ec2a34dc4fddaec3224043f4a72bbe6d0e.png" class="latex" width="15"> A step consists of moving the marker onto one of the adjoining white squares in the row above. How many <img alt="$7$" height="12" width="9" class="latex" src="//latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png">-step paths are there from <img height="12" class="latex" alt="$P$" src="//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" width="14"> to <img width="22" class="latex" height="16" src="//latex.artofproblemsolving.com/5/3/5/5351d296b5674cb8207a306f4412527dab730631.png" alt="$Q?$" style="vertical-align: -3px"> (The figure shows a sample path.)
+</p><p><img alt="[asy]//diagram by SirCalcsALot size(200); int[] x = {6, 5, 4, 5, 6, 5, 6}; int[] y = {1, 2, 3, 4, 5, 6, 7}; int N = 7; for (int i = 0; i < 8; ++i) { for (int j = 0; j < 8; ++j) { draw((i,j)--(i+1,j)--(i+1,j+1)--(i,j+1)--(i,j)); if ((i+j)&nbsp;% 2 == 0) { filldraw((i,j)--(i+1,j)--(i+1,j+1)--(i,j+1)--(i,j)--cycle,black); } } } for (int i = 0; i < N; ++i) { draw(circle((x[i],y[i])+(0.5,0.5),0.35)); } label(&quot;$P$&quot;, (5.5, 0.5)); label(&quot;$Q$&quot;, (6.5, 7.5)); [/asy]" width="335" src="//latex.artofproblemsolving.com/2/1/0/210b98fc88e4c297773b0400a31787193c0d4338.png" height="335" class="latexcenter">
+</p><p><img alt="$\textbf{(A) }28 \qquad \textbf{(B) }30 \qquad \textbf{(C) }32 \qquad \textbf{(D) }33 \qquad \textbf{(E) }35$" src="//latex.artofproblemsolving.com/4/a/f/4afd089177252e283e0176cd12e59980f95df741.png" width="398" style="vertical-align: -4px" height="17" class="latex">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>When a positive integer <img src="//latex.artofproblemsolving.com/f/c/9/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" class="latex" height="12" alt="$N$" width="16"> is fed into a machine, the output is a number calculated according to the rule shown below.
+</p><p><img alt="[asy] size(300); defaultpen(linewidth(0.8)+fontsize(13)); real r = 0.05; draw((0.9,0)--(3.5,0),EndArrow(size=7)); filldraw((4,2.5)--(7,2.5)--(7,-2.5)--(4,-2.5)--cycle,gray(0.65)); fill(circle((5.5,1.25),0.8),white); fill(circle((5.5,1.25),0.5),gray(0.65)); fill((4.3,-r)--(6.7,-r)--(6.7,-1-r)--(4.3,-1-r)--cycle,white); fill((4.3,-1.25+r)--(6.7,-1.25+r)--(6.7,-2.25+r)--(4.3,-2.25+r)--cycle,white); fill((4.6,-0.25-r)--(6.4,-0.25-r)--(6.4,-0.75-r)--(4.6,-0.75-r)--cycle,gray(0.65)); fill((4.6,-1.5+r)--(6.4,-1.5+r)--(6.4,-2+r)--(4.6,-2+r)--cycle,gray(0.65)); label(&quot;$N$&quot;,(0.45,0)); draw((7.5,1.25)--(11.25,1.25),EndArrow(size=7)); draw((7.5,-1.25)--(11.25,-1.25),EndArrow(size=7)); label(&quot;if $N$ is even&quot;,(9.25,1.25),N); label(&quot;if $N$ is odd&quot;,(9.25,-1.25),N); label(&quot;$\frac N2$&quot;,(12,1.25)); label(&quot;$3N+1$&quot;,(12.6,-1.25)); [/asy]" class="latexcenter" width="502" height="192" src="//latex.artofproblemsolving.com/e/8/7/e878d1d4459a47247d03d903a46441e85ec0a503.png">
+For example, starting with an input of <img width="54" src="//latex.artofproblemsolving.com/5/e/3/5e3873c70c300e3ec4b63524055644844431adcf.png" style="vertical-align: -3px" alt="$N=7,$" class="latex" height="16"> the machine will output <img alt="$3 \cdot 7 +1 = 22.$" width="108" src="//latex.artofproblemsolving.com/b/4/8/b48891506b80a9964c81c03caf05cc4dd69deb92.png" style="vertical-align: -1px" class="latex" height="14"> Then if the output is repeatedly inserted into the machine five more times, the final output is <img height="12" class="latex" alt="$26.$" src="//latex.artofproblemsolving.com/0/4/9/0493cb27bc77732e314703377654d93b2b21160f.png" width="21"><img class="latexcenter" alt="\[7 \to 22 \to 11 \to 34 \to 17 \to 52 \to 26\]" src="//latex.artofproblemsolving.com/4/f/7/4f7a3ef049942c89a393ca7cf10d85cc7ddd0b8d.png" width="286" height="13">When the same <img width="8" class="latex" height="12" src="//latex.artofproblemsolving.com/6/0/1/601a7806cbfad68196c43a4665871f8c3186802e.png" alt="$6$">-step process is applied to a different starting value of <img class="latex" alt="$N,$" style="vertical-align: -3px" width="19" src="//latex.artofproblemsolving.com/3/5/6/35672a19103f2ead1f02935bb8450addc3318b94.png" height="16"> the final output is <img style="vertical-align: 0px" height="12" class="latex" width="12" src="//latex.artofproblemsolving.com/6/c/d/6cdd1b53e5faf7a118222e4b7571d1e9afa0cf56.png" alt="$1.$"> What is the sum of all such integers <img alt="$N?$" class="latex" height="12" src="//latex.artofproblemsolving.com/8/5/c/85cf31acc4d19289fd14d58e39c17cff9fe2b0e4.png" width="24"><img width="312" alt="\[N \to \rule{0.5cm}{0.15mm} \to \rule{0.5cm}{0.15mm} \to \rule{0.5cm}{0.15mm} \to \rule{0.5cm}{0.15mm} \to \rule{0.5cm}{0.15mm} \to 1\]" src="//latex.artofproblemsolving.com/c/8/9/c8914c251134025522a9009e8cdf1f898c2e9e08.png" class="latexcenter" height="13">
+<img height="17" width="398" class="latex" alt="$\textbf{(A) }73 \qquad \textbf{(B) }74 \qquad \textbf{(C) }75 \qquad \textbf{(D) }82 \qquad \textbf{(E) }83$" src="//latex.artofproblemsolving.com/2/8/b/28b85e18a5399ac1ecb0af9bf357d1864c0f61c1.png" style="vertical-align: -4px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Five different awards are to be given to three students. Each student will receive at least one award. In how many different ways can the awards be distributed?
+</p><p><img height="17" alt="$\textbf{(A) }120 \qquad \textbf{(B) }150 \qquad \textbf{(C) }180 \qquad \textbf{(D) }210 \qquad \textbf{(E) }240$" src="//latex.artofproblemsolving.com/9/5/4/9544dac932fa0658ff020fa6667eb1bb783e3172.png" style="vertical-align: -4px" width="443" class="latex">
+</p><p>==
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A large square region is paved with <img alt="$n^2$" width="17" height="15" class="latex" src="//latex.artofproblemsolving.com/6/0/0/6006bba637eef443381fbaff768fa62d9ff41e62.png"> gray square tiles, each measuring <img height="8" src="//latex.artofproblemsolving.com/f/3/7/f37bba504894945c07a32f5496d74299a37aa51c.png" width="8" class="latex" alt="$s$"> inches on a side. A border <img height="12" src="//latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="$d$" width="9" class="latex"> inches wide surrounds each tile. The figure below shows the case for <img src="//latex.artofproblemsolving.com/5/6/3/5635737307f5f0651cced8ee2e6558a426fd27b5.png" height="12" alt="$n=3$" class="latex" width="43">. When <img src="//latex.artofproblemsolving.com/e/c/e/ece448a1996d075309961bd398a7c8afc99a50e0.png" height="12" style="vertical-align: 0px" width="53" class="latex" alt="$n=24$">, the <img height="12" width="26" class="latex" alt="$576$" src="//latex.artofproblemsolving.com/7/0/8/7080fdbf6e7385fb60b23d885788d3bd7eda12a9.png"> gray tiles cover <img class="latex" src="//latex.artofproblemsolving.com/8/2/c/82c2d0dd5aaa1283b9aed82f11835088b120a596.png" style="vertical-align: -1px" width="32" height="14" alt="$64\%$"> of the area of the large square region. What is the ratio <img src="//latex.artofproblemsolving.com/1/1/a/11ad8a0a7d748c67f54b6c7d20551b8a84672174.png" class="latex" width="11" height="37" alt="$\frac{d}{s}$" style="vertical-align: -12px"> for this larger value of <img src="//latex.artofproblemsolving.com/a/2/8/a28578f91569670ce8f5d1c27b4ea637a09a75a9.png" class="latex" alt="$n?$" width="19" height="12">
+</p><p><img alt="[asy] draw((0,0)--(13,0)--(13,13)--(0,13)--cycle); filldraw((1,1)--(4,1)--(4,4)--(1,4)--cycle, mediumgray); filldraw((1,5)--(4,5)--(4,8)--(1,8)--cycle, mediumgray); filldraw((1,9)--(4,9)--(4,12)--(1,12)--cycle, mediumgray); filldraw((5,1)--(8,1)--(8,4)--(5,4)--cycle, mediumgray); filldraw((5,5)--(8,5)--(8,8)--(5,8)--cycle, mediumgray); filldraw((5,9)--(8,9)--(8,12)--(5,12)--cycle, mediumgray); filldraw((9,1)--(12,1)--(12,4)--(9,4)--cycle, mediumgray); filldraw((9,5)--(12,5)--(12,8)--(9,8)--cycle, mediumgray); filldraw((12,12)--(12,9)--(9,9)--(9,12)--cycle, mediumgray); [/asy]" src="//latex.artofproblemsolving.com/8/f/d/8fd65da31faff2077b0526ddc1de09fec17ff2df.png" width="252" class="latexcenter" height="252">
+</p><p><img class="latex" height="38" width="408" src="//latex.artofproblemsolving.com/f/1/a/f1ac2797b0517082c78c46b2b633595ee573261e.png" alt="$\textbf{(A) }\frac{6}{25} \qquad \textbf{(B) }\frac{1}{4} \qquad \textbf{(C) }\frac{9}{25} \qquad \textbf{(D) }\frac{7}{16} \qquad \textbf{(E) }\frac{9}{16}$" style="vertical-align: -13px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Rectangles <img alt="$R_1$" height="15" src="//latex.artofproblemsolving.com/7/7/c/77cbbeb5834997d74dbc44264f04660c2bf84077.png" class="latex" width="19" style="vertical-align: -2px"> and <img alt="$R_2,$" class="latex" width="25" height="16" style="vertical-align: -3px" src="//latex.artofproblemsolving.com/d/8/2/d827a7250d7f013c7e2f06086437f8d6e96bb4bc.png"> and squares <img width="52" class="latex" alt="$S_1,\,S_2,\,$" height="16" style="vertical-align: -3px" src="//latex.artofproblemsolving.com/d/3/6/d36755eb43fc4282dcd8dc2a86a8c1db06152112.png"> and <img height="16" width="22" class="latex" alt="$S_3,$" src="//latex.artofproblemsolving.com/4/7/d/47d9096e86c64fbe0efd78f38515c560424d5de8.png" style="vertical-align: -3px"> shown below, combine to form a rectangle that is 3322 units wide and 2020 units high. What is the side length of <img style="vertical-align: -2px" class="latex" height="15" src="//latex.artofproblemsolving.com/7/f/4/7f4caea56d945d0b6e49701b42ce06e0fb92e663.png" width="17" alt="$S_2$"> in units?
+</p><p><img alt="[asy] draw((0,0)--(5,0)--(5,3)--(0,3)--(0,0)); draw((3,0)--(3,1)--(0,1)); draw((3,1)--(3,2)--(5,2)); draw((3,2)--(2,2)--(2,1)--(2,3)); label(&quot;$R_1$&quot;,(3/2,1/2)); label(&quot;$S_3$&quot;,(4,1)); label(&quot;$S_2$&quot;,(5/2,3/2)); label(&quot;$S_1$&quot;,(1,2)); label(&quot;$R_2$&quot;,(7/2,5/2)); [/asy]" width="252" height="152" class="latexcenter" src="//latex.artofproblemsolving.com/a/5/5/a55c518a1179d67520c6a03827b4ba25ca1413f2.png">
+</p><p><img src="//latex.artofproblemsolving.com/b/b/c/bbca9ed9f6270ad681b11d70d6bbceb1ea2afb83.png" alt="$\textbf{(A) }651 \qquad \textbf{(B) }655 \qquad \textbf{(C) }656 \qquad \textbf{(D) }662 \qquad \textbf{(E) }666$" class="latex" style="vertical-align: -4px" width="443" height="17">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2022 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Steph scored <img width="17" height="13" src="//latex.artofproblemsolving.com/f/1/9/f1965fae079a9ba2c0726c307070c2355dfcb213.png" class="latex" style="vertical-align: 0px" alt="$15$"> baskets out of <img class="latex" alt="$20$" height="12" width="17" src="//latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png"> attempts in the first half of a game, and <img width="17" class="latex" style="vertical-align: 0px" src="//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png" height="13" alt="$10$"> baskets out of <img alt="$10$" height="13" class="latex" style="vertical-align: 0px" width="17" src="//latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png"> attempts in the second half. Candace took <img class="latex" style="vertical-align: 0px" width="17" src="//latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png" alt="$12$" height="12"> attempts in the first half and <img style="vertical-align: 0px" class="latex" src="//latex.artofproblemsolving.com/5/e/7/5e7a1b6098a8c98b8e4adae526aeef4b91712620.png" alt="$18$" width="17" height="13"> attempts in the second. In each half, Steph scored a higher percentage of baskets than Candace. Surprisingly they ended with the same overall percentage of baskets scored. How many more baskets did Candace score in the second half than in the first?
+<img class="latexcenter" width="332" alt="[asy] size(7cm); draw((-8,27)--(72,27)); draw((16,0)--(16,35)); draw((40,0)--(40,35)); label(&quot;12&quot;, (28,3)); draw((25,6.5)--(25,12)--(31,12)--(31,6.5)--cycle); draw((25,5.5)--(31,5.5)); label(&quot;18&quot;, (56,3)); draw((53,6.5)--(53,12)--(59,12)--(59,6.5)--cycle); draw((53,5.5)--(59,5.5)); draw((53,5.5)--(59,5.5)); label(&quot;20&quot;, (28,18)); label(&quot;15&quot;, (28,24)); draw((25,21)--(31,21)); label(&quot;10&quot;, (56,18)); label(&quot;10&quot;, (56,24)); draw((53,21)--(59,21)); label(&quot;First Half&quot;, (28,31)); label(&quot;Second Half&quot;, (56,31)); label(&quot;Candace&quot;, (2.35,6)); label(&quot;Steph&quot;, (0,21)); [/asy]" height="148" src="//latex.artofproblemsolving.com/4/2/a/42aefbe42671b2aeb0b90d88e171e5e03a00b73e.png">
+<img class="latex" height="18" alt="$\textbf{(A) } 7\qquad\textbf{(B) } 8\qquad\textbf{(C) } 9\qquad\textbf{(D) } 10\qquad\textbf{(E) } 11$" width="373" style="vertical-align: -5px" src="//latex.artofproblemsolving.com/8/9/c/89c22e2134257867ed57c420ffad70bffabd4f84.png">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A bus takes <img width="8" alt="$2$" class="latex" src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" height="12"> minutes to drive from one stop to the next, and waits <img width="8" style="vertical-align: 0px" height="12" src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="$1$" class="latex"> minute at each stop to let passengers board. Zia takes <img src="//latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png" alt="$5$" class="latex" height="12" width="8"> minutes to walk from one bus stop to the next. As Zia reaches a bus stop, if the bus is at the previous stop or has already left the previous stop, then she will wait for the bus. Otherwise she will start walking toward the next stop. Suppose the bus and Zia start at the same time toward the library, with the bus <img class="latex" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="$3$" width="8" height="12"> stops behind. After how many minutes will Zia board the bus?
+</p>
+<div class="center"><div class="floatnone"><a class="image" href="/wiki/index.php/File:2022_AMC_8_Problem_22_Diagram.png"><img src="https://wiki-images.artofproblemsolving.com//thumb/5/57/2022_AMC_8_Problem_22_Diagram.png/750px-2022_AMC_8_Problem_22_Diagram.png" srcset="https://wiki-images.artofproblemsolving.com//thumb/5/57/2022_AMC_8_Problem_22_Diagram.png/1125px-2022_AMC_8_Problem_22_Diagram.png 1.5x, https://wiki-images.artofproblemsolving.com//5/57/2022_AMC_8_Problem_22_Diagram.png 2x" alt="2022 AMC 8 Problem 22 Diagram.png" height="115" width="750"></a></div></div>
+<p><img class="latex" src="//latex.artofproblemsolving.com/9/6/1/9619c6075ef397361475f26d377ec3aad49ca766.png" alt="$\textbf{(A) } 17 \qquad \textbf{(B) } 19 \qquad \textbf{(C) } 20 \qquad \textbf{(D) } 21 \qquad \textbf{(E) } 23$" width="401" height="18" style="vertical-align: -5px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A <img height="13" src="//latex.artofproblemsolving.com/0/0/9/009cf3eeb0ff3789cc057632947cadb200ab4663.png" alt="$\triangle$" width="15" class="latex"> or <img width="17" height="17" alt="$\bigcirc$" src="//latex.artofproblemsolving.com/b/1/3/b1352e2dc4380ca6efe5d978cb4bfa2745354e11.png" class="latex" style="vertical-align: -4px"> is placed in each of the nine squares in a <img alt="$3$" class="latex" width="8" height="12" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png">-by-<img src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" width="8" alt="$3$" class="latex" height="12"> grid. Shown below is a sample configuration with three <img width="15" alt="$\triangle$" height="13" src="//latex.artofproblemsolving.com/0/0/9/009cf3eeb0ff3789cc057632947cadb200ab4663.png" class="latex">s in a line.
+<img width="158" height="158" src="//latex.artofproblemsolving.com/f/7/9/f79f74a5bed66611fe027a9dd5ab0948b3a033ac.png" alt="[asy] //diagram by kante314 size(3.3cm); defaultpen(linewidth(1)); real r = 0.37; path equi = r * dir(-30) -- (r+0.03) * dir(90) -- r * dir(210) -- cycle; draw((0,0)--(0,3)--(3,3)--(3,0)--cycle); draw((0,1)--(3,1)--(3,2)--(0,2)--cycle); draw((1,0)--(1,3)--(2,3)--(2,0)--cycle); draw(circle((3/2,5/2),1/3)); draw(circle((5/2,1/2),1/3)); draw(circle((3/2,3/2),1/3)); draw(shift(0.5,0.38) * equi); draw(shift(1.5,0.38) * equi); draw(shift(0.5,1.38) * equi); draw(shift(2.5,1.38) * equi); draw(shift(0.5,2.38) * equi); draw(shift(2.5,2.38) * equi); [/asy]" class="latexcenter">
+How many configurations will have three <img src="//latex.artofproblemsolving.com/0/0/9/009cf3eeb0ff3789cc057632947cadb200ab4663.png" height="13" width="15" alt="$\triangle$" class="latex">s in a line and three <img width="17" class="latex" alt="$\bigcirc$" height="17" style="vertical-align: -4px" src="//latex.artofproblemsolving.com/b/1/3/b1352e2dc4380ca6efe5d978cb4bfa2745354e11.png">s in a line?
+</p><p><img src="//latex.artofproblemsolving.com/e/c/6/ec62159e4026c1d9554c12f6f114964bc07602a3.png" class="latex" alt="$\textbf{(A) } 39 \qquad \textbf{(B) } 42 \qquad \textbf{(C) } 78 \qquad \textbf{(D) } 84 \qquad \textbf{(E) } 96$" style="vertical-align: -5px" height="18" width="401">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>The figure below shows a polygon <img width="118" class="latex" src="//latex.artofproblemsolving.com/0/5/5/055dcba798b1424c44c2606d913e0f2edab1c5ad.png" alt="$ABCDEFGH$" height="13">, consisting of rectangles and right triangles. When cut out and folded on the dotted lines, the polygon forms a triangular prism. Suppose that <img class="latex" src="//latex.artofproblemsolving.com/3/c/f/3cf901394acf1512309878143cf57ed4f40af5a2.png" style="vertical-align: -1px" height="14" width="118" alt="$AH = EF = 8$"> and <img class="latex" width="75" alt="$GH = 14$" style="vertical-align: -1px" src="//latex.artofproblemsolving.com/e/a/e/eaeff45acba8f616d352f0b033c9ff4df91be514.png" height="14">. What is the volume of the prism?
+</p><p><img height="348" alt="[asy] usepackage(&quot;mathptmx&quot;); size(275); defaultpen(linewidth(0.8)); real r = 2, s = 2.5, theta = 14; pair G = (0,0), F = (r,0), C = (r,s), B = (0,s), M = (C+F)/2, I = M + s/2 * dir(-theta); pair N = (B+G)/2, J = N + s/2 * dir(180+theta); pair E = F + r * dir(- 45 - theta/2), D = I+E-F; pair H = J + r * dir(135 + theta/2), A = B+H-J; draw(A--B--C--I--D--E--F--G--J--H--cycle^^rightanglemark(F,I,C)^^rightanglemark(G,J,B)); draw(J--B--G^^C--F--I,linetype (&quot;4 4&quot;)); dot(&quot;$A$&quot;,A,N); dot(&quot;$B$&quot;,B,1.2*N); dot(&quot;$C$&quot;,C,N); dot(&quot;$D$&quot;,D,dir(0)); dot(&quot;$E$&quot;,E,S); dot(&quot;$F$&quot;,F,1.5*dir(-100)); dot(&quot;$G$&quot;,G,S); dot(&quot;$H$&quot;,H,W); dot(&quot;$I$&quot;,I,NE); dot(&quot;$J$&quot;,J,1.5*S); [/asy]" width="458" src="//latex.artofproblemsolving.com/8/c/0/8c0183579e57a39614f2c3be1824f286b6bf4b86.png" class="latexcenter">
+</p><p><img src="//latex.artofproblemsolving.com/5/5/0/5507c5e765f8816bec7865a3d526d7719e7202b2.png" alt="$\textbf{(A)} ~112\qquad\textbf{(B)} ~128\qquad\textbf{(C)} ~192\qquad\textbf{(D)} ~240\qquad\textbf{(E)} ~288$" style="vertical-align: -5px" width="442" class="latex" height="18">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>A cricket randomly hops between <img style="vertical-align: 0px" width="9" height="12" alt="$4$" src="//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png" class="latex"> leaves, on each turn hopping to one of the other <img height="12" src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" class="latex" alt="$3$" width="8"> leaves with equal probability. After <img class="latex" alt="$4$" src="//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png" style="vertical-align: 0px" height="12" width="9"> hops what is the probability that the cricket has returned to the leaf where it started?
+</p>
+<div class="center"><div class="floatnone"><a href="/wiki/index.php/File:2022_AMC_8_Problem_25_Picture.jpg" class="image"><img height="317" width="600" alt="2022 AMC 8 Problem 25 Picture.jpg" src="https://wiki-images.artofproblemsolving.com//thumb/f/f0/2022_AMC_8_Problem_25_Picture.jpg/600px-2022_AMC_8_Problem_25_Picture.jpg" srcset="https://wiki-images.artofproblemsolving.com//thumb/f/f0/2022_AMC_8_Problem_25_Picture.jpg/900px-2022_AMC_8_Problem_25_Picture.jpg 1.5x, https://wiki-images.artofproblemsolving.com//thumb/f/f0/2022_AMC_8_Problem_25_Picture.jpg/1200px-2022_AMC_8_Problem_25_Picture.jpg 2x"></a></div></div>
+<p><img width="402" alt="$\textbf{(A) }\frac{2}{9}\qquad\textbf{(B) }\frac{19}{80}\qquad\textbf{(C) }\frac{20}{81}\qquad\textbf{(D) }\frac{1}{4}\qquad\textbf{(E) }\frac{7}{27}$" height="38" style="vertical-align: -13px" class="latex" src="//latex.artofproblemsolving.com/9/e/9/9e98d700c58057d204da8fa1d899cdc44a91d7c1.png">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+    <div>
+      <h1 id="firstHeading" class="firstHeading">2023 AMC_8</h1>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 21</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Alina writes the numbers <img class="latex" alt="$1, 2, \dots , 9$" width="75" height="16" src="//latex.artofproblemsolving.com/9/9/e/99e5213f21f74a1eea064c29363fa047700e1f45.png" style="vertical-align: -3px"> on separate cards, one number per card. She wishes to divide the cards into <img src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" height="12" alt="$3$" class="latex" width="8"> groups of <img src="//latex.artofproblemsolving.com/7/c/d/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="$3$" class="latex" width="8" height="12"> cards so that the sum of the numbers in each group will be the same. In how many ways can this be done?
+</p><p><img class="latex" alt="$\textbf{(A) } 0 \qquad \textbf{(B) } 1 \qquad \textbf{(C) } 2 \qquad \textbf{(D) } 3 \qquad \textbf{(E) } 4$" src="//latex.artofproblemsolving.com/2/0/c/20c4875befd8345551223653f9cbfadb7dec2337.png" width="353" style="vertical-align: -4px" height="17">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 22</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>In a sequence of positive integers, each term after the second is the product of the previous two terms. The sixth term is <img src="//latex.artofproblemsolving.com/0/9/2/0929ed034079c23455c385741744274c1f69b61b.png" style="vertical-align: 0px" width="35" alt="$4000$" class="latex" height="13">. What is the first term?
+</p><p><img height="18" src="//latex.artofproblemsolving.com/3/b/c/3bcafbd068b04d629843622091fe19086483f1f6.png" style="vertical-align: -5px" class="latex" width="360" alt="$\textbf{(A)}\ 1 \qquad \textbf{(B)}\ 2 \qquad \textbf{(C)}\ 4 \qquad \textbf{(D)}\ 5 \qquad \textbf{(E)}\ 10$">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 23</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Each square in a <img src="//latex.artofproblemsolving.com/d/2/7/d278803d72fcc493afb1559174a483aa7f41d143.png" height="12" width="40" alt="$3 \times 3$" class="latex"> grid is randomly filled with one of the <img width="9" alt="$4$" class="latex" style="vertical-align: 0px" height="12" src="//latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png"> gray and white tiles shown below on the right.
+<img height="98" alt="[asy] size(5.663333333cm); draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,gray); draw((1,0)--(1,3)--(2,3)--(2,0),gray); draw((0,1)--(3,1)--(3,2)--(0,2),gray);  fill((6,.33)--(7,.33)--(7,1.33)--cycle,mediumgray); draw((6,.33)--(7,.33)--(7,1.33)--(6,1.33)--cycle,gray); fill((6,1.67)--(7,2.67)--(6,2.67)--cycle,mediumgray); draw((6,1.67)--(7,1.67)--(7,2.67)--(6,2.67)--cycle,gray); fill((7.33,.33)--(8.33,.33)--(7.33,1.33)--cycle,mediumgray); draw((7.33,.33)--(8.33,.33)--(8.33,1.33)--(7.33,1.33)--cycle,gray); fill((8.33,1.67)--(8.33,2.67)--(7.33,2.67)--cycle,mediumgray); draw((7.33,1.67)--(8.33,1.67)--(8.33,2.67)--(7.33,2.67)--cycle,gray); [/asy]" class="latexcenter" width="268" src="//latex.artofproblemsolving.com/c/0/1/c01163352203e89b9926215ea00f34b275a6c630.png">
+What is the probability that the tiling will contain a large gray diamond in one of the smaller <img alt="$2 \times 2$" width="40" class="latex" src="//latex.artofproblemsolving.com/e/4/c/e4c044326e2e84b768dafef07060bd42b0a5cb21.png" height="12"> grids? Below is an example of such tiling.
+<img src="//latex.artofproblemsolving.com/8/d/9/8d9055c9c5a4feb6f71e870557f61ce1d6b5033a.png" class="latexcenter" alt="[asy] size(2cm);  fill((1,0)--(0,1)--(0,2)--(1,1)--cycle,mediumgray); fill((2,0)--(3,1)--(2,2)--(1,1)--cycle,mediumgray); fill((1,2)--(1,3)--(0,3)--cycle,mediumgray); fill((1,2)--(2,2)--(2,3)--cycle,mediumgray); fill((3,2)--(3,3)--(2,3)--cycle,mediumgray);  draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,gray); draw((1,0)--(1,3)--(2,3)--(2,0),gray); draw((0,1)--(3,1)--(3,2)--(0,2),gray); [/asy]" width="95" height="95">
+</p><p><img height="38" class="latex" width="439" alt="$\textbf{(A) } \frac{1}{1024} \qquad \textbf{(B) } \frac{1}{256} \qquad \textbf{(C) } \frac{1}{64} \qquad \textbf{(D) } \frac{1}{16} \qquad \textbf{(E) } \frac{1}{4}$" src="//latex.artofproblemsolving.com/a/c/c/acc04643e80ab26da451b0c410ac5c7f8ffd6bad.png" style="vertical-align: -13px">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 24</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Isosceles <img height="13" src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" width="58" class="latex" alt="$\triangle ABC$"> has equal side lengths <img src="//latex.artofproblemsolving.com/5/7/e/57ee5125358c0606c9b588580ddfa66f83e607b7.png" alt="$AB$" height="13" width="27" class="latex"> and <img width="28" height="12" src="//latex.artofproblemsolving.com/6/c/5/6c52a41dcbd739f1d026c5d4f181438b75b76976.png" class="latex" alt="$BC$">. In the figure below, segments are drawn parallel to <img alt="$\overline{AC}$" width="28" class="latex" src="//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png" height="15"> so that the shaded portions of <img alt="$\triangle ABC$" height="13" src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" width="58" class="latex"> have the same area. The heights of the two unshaded portions are 11 and 5 units, respectively. What is the height of <img width="10" height="12" alt="$h$" class="latex" src="//latex.artofproblemsolving.com/8/1/8/8189a5b5a0917b8c93350827be4038af1839139d.png"> of <img width="58" src="//latex.artofproblemsolving.com/8/c/3/8c3a2d2224f7d163b46d702132425d47828bf538.png" class="latex" alt="$\triangle ABC$" height="13">?
+</p><p><img class="latexcenter" height="262" width="568" alt="[asy] //Diagram by TheMathGuyd size(12cm); real h = 2.5; // height real g=4; //c2c space real s = 0.65; //Xcord of Hline real adj = 0.08; //adjust line diffs pair A,B,C; B=(0,h); C=(1,0); A=-conj(C); pair PONE=(s,h*(1-s)); //Endpoint of Hline ONE pair PTWO=(s+adj,h*(1-s-adj)); //Endpoint of Hline ONE path LONE=PONE--(-conj(PONE)); //Hline ONE path LTWO=PTWO--(-conj(PTWO)); path T=A--B--C--cycle; //Triangle   fill (shift(g,0)*(LTWO--B--cycle),mediumgrey); fill (LONE--A--C--cycle,mediumgrey);  draw(LONE); draw(T); label(&quot;$A$&quot;,A,SW); label(&quot;$B$&quot;,B,N); label(&quot;$C$&quot;,C,SE);  draw(shift(g,0)*LTWO); draw(shift(g,0)*T); label(&quot;$A$&quot;,shift(g,0)*A,SW); label(&quot;$B$&quot;,shift(g,0)*B,N); label(&quot;$C$&quot;,shift(g,0)*C,SE);  draw(B--shift(g,0)*B,dashed); draw(C--shift(g,0)*A,dashed); draw((g/2,0)--(g/2,h),dashed); draw((0,h*(1-s))--B,dashed); draw((g,h*(1-s-adj))--(g,0),dashed); label(&quot;$5$&quot;, midpoint((g,h*(1-s-adj))--(g,0)),UnFill); label(&quot;$h$&quot;, midpoint((g/2,0)--(g/2,h)),UnFill); label(&quot;$11$&quot;, midpoint((0,h*(1-s))--B),UnFill); [/asy]" src="//latex.artofproblemsolving.com/6/1/6/61696b1f6c1847f1610683505bd7e902290c51da.png">
+(note: diagrams are not necessarily drawn to scale)
+</p><p><img class="latex" src="//latex.artofproblemsolving.com/6/1/1/61158bf35c5fd37cfd3fda3eac1332464a16b512.png" alt="$\textbf{(A) } 14.6 \qquad \textbf{(B) } 14.8 \qquad \textbf{(C) } 15 \qquad \textbf{(D) } 15.2 \qquad \textbf{(E) } 15.4$" height="18" style="vertical-align: -5px" width="457">
+</p>
+</div>
+
+
+      </div>
+
+      <div>
+
+        <h2><span class="mw-headline">Problem 25</span></h2>
+        <div class="mw-parser-output">
+
+
+<p>Fifteen integers <img alt="$a_1, a_2, a_3, \dots, a_{15}$" height="11" style="vertical-align: -3px" src="//latex.artofproblemsolving.com/f/e/2/fe2da225200f3ec70146703c12fcb3dd73f60c96.png" class="latex" width="129"> are arranged in order on a number line. The integers are equally spaced and have the property that
+<img class="latexcenter" width="392" src="//latex.artofproblemsolving.com/1/d/2/1d2ca926ca9cbd962c46878abaecad6ef507d5ff.png" height="16" alt="\[1 \le a_1 \le 10, \thickspace 13 \le a_2 \le 20, \thickspace \text{ and } \thickspace 241 \le a_{15}\le 250.\]">
+What is the sum of digits of <img src="//latex.artofproblemsolving.com/6/4/e/64e86cfabffadcd5402b6b0a955b97e77ca678f0.png" class="latex" height="15" alt="$a_{14}?$" style="vertical-align: -2px" width="31">
+</p><p><img style="vertical-align: -5px" width="378" class="latex" alt="$\textbf{(A)}\ 8 \qquad \textbf{(B)}\ 9 \qquad \textbf{(C)}\ 10 \qquad \textbf{(D)}\ 11 \qquad \textbf{(E)}\ 12$" height="18" src="//latex.artofproblemsolving.com/0/3/1/031bc749784013ca0e0bd575aebeed9a7928a569.png">
+</p>
+</div>
+
+
+      </div>
+
+    </div>
+    <div style="page-break-after: always"></div>
+
+
+</body>
+
+</html>

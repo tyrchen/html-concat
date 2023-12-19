@@ -6,7 +6,7 @@ use std::fs;
 async fn main() -> Result<()> {
     let scraper = AopsScraperBuilder::default()
         .challenge(Challenge::Amc8)
-        .years(2023..=2023)
+        .years(&[2003..=2020, 2022..=2023])
         .problems(21..=25)
         .build()?;
 

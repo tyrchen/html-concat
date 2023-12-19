@@ -8,12 +8,17 @@
   {% for style in styles %}
   <link rel="stylesheet" href="{{ style }}">
   {% endfor %}
+  <style>
+    .problem-content p {
+      font-size: 18px;
+    }
+  </style>
 </head>
 
 <body>
   <div class="page-wrapper">
     {% for content in contents %}
-    <div>
+    <div class="problem-content">
       <h1 id="firstHeading" class="firstHeading">{{ content.year }} {{ challenge }}</h1>
       {% for item in content.problems %}
       <div>

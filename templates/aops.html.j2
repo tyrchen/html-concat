@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOSP</title>
+  {% for style in styles %}
+  <link rel="stylesheet" href="{{ style }}">
+  {% endfor %}
+</head>
+
+<body>
+  <div class="page-wrapper">
+    {% for content in contents %}
+    <div>
+      <h1 id="firstHeading" class="firstHeading">{{ content.year }} {{ challenge }}</h1>
+      {% for item in content.problems %}
+      <div>
+        {% if is_solution %}
+        <h2><span class="mw-headline">Solution {{ item.number }}</span></h2>
+        {{ item.solution|safe }}
+        {% else %}
+        <h2><span class="mw-headline">Problem {{ item.number }}</span></h2>
+        {{ item.problem|safe }}
+        {% endif %}
+
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+
+</body>
+
+</html>

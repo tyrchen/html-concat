@@ -1,0 +1,10 @@
+---
+source: src/aops.rs
+expression: styles
+---
+- "https://artofproblemsolving.com/assets/fonts/font-awesome/css/all.css"
+- "https://artofproblemsolving.com/assets/css/sharedsite.css"
+- "https://artofproblemsolving.com/assets/css/navheader.css"
+- "https://artofproblemsolving.com/assets/css/footer.css"
+- "https://artofproblemsolving.com/assets/css/main-head.css"
+- "https://artofproblemsolving.com/assets/css/epic-fail.css"
